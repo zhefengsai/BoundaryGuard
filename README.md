@@ -195,4 +195,4 @@ python3 exp/verify_manifest.py
 
 ## Scope
 
-This tree does not include private keys, `.env` files, funded testnet signers, operator RPC credentials, or the manuscript source. Raw Wormhole transaction dumps (tens of megabytes) are omitted; the printed portability result is `data/wormhole_live_boundary.json`. The release does not estimate the prevalence of silent omissions on the public Internet.
+This tree does not include private keys, `.env` files, funded testnet signers, operator RPC credentials, or the manuscript source. Raw Wormhole transaction dumps (tens of megabytes) are omitted; the printed portability result is `data/wormhole_live_boundary.json`. The release does not estimate the prevalence of silent omissions on the public Internet. The files in this repository are licensed under CC BY 4.0 (see `LICENSE`).
