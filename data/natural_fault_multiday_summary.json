@@ -1,0 +1,46 @@
+{
+  "calendar_days": [
+    "2026-08-03",
+    "2026-08-04",
+    "2026-08-05",
+    "2026-08-06",
+    "2026-08-18",
+    "2026-08-19"
+  ],
+  "epochs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "failure_class_counts": {
+    "successful_empty": 150,
+    "truncated_or_stale_nonempty": 571
+  },
+  "meets_three_silent_providers": false,
+  "provenance": "live_natural_observation",
+  "records": 3856,
+  "schedule_sha256": "c572847393a12e5e5edab3090d0e19d740e4602016219eeb8b3a7520fb485706",
+  "second_failure_class_observed": true,
+  "silent_empty_by_chain_provider": {
+    "ethereum/1rpc": 6,
+    "ethereum/flashbots": 62,
+    "optimism/1rpc": 82
+  },
+  "silent_empty_provider_count": 2,
+  "silent_empty_providers": [
+    "1rpc",
+    "flashbots"
+  ],
+  "silent_response_events": 721,
+  "silent_unique_blocks": 32,
+  "silent_unique_nonces": 32,
+  "silent_unique_response_hashes": 44
+}

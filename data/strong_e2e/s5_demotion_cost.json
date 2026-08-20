@@ -1,0 +1,10 @@
+{
+  "artifact_cost": "data/boundaryguard_cost_sweep.json",
+  "demotion_frac_n16_alchemy": 0.85,
+  "gate": "S5_item4_demotion_cost",
+  "mean_abs_model_error_pp": 9.145675505050509,
+  "observed_at": "2026-08-08T20:45:38.761849+00:00",
+  "pass": true,
+  "provenance": "controlled_fault_injection",
+  "sparse_f1_mean_cu_saving_pct": 28.952546296296294
+}

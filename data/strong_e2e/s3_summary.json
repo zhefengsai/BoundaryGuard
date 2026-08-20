@@ -1,0 +1,41 @@
+{
+  "artifacts": {
+    "s2_samples": "data/strong_e2e/samples.jsonl",
+    "s3_samples": "data/strong_e2e/s3_samples.jsonl",
+    "s3_trace": "data/strong_e2e/s3_proxy_trace.jsonl"
+  },
+  "correlated_fail_closed": {
+    "n": 10,
+    "passed": 10,
+    "target": 10,
+    "target_min": 5
+  },
+  "dual_correlated_gap": {
+    "always_dual_misses_correlated_silent": true,
+    "artifact": "data/dual_silent_empty_gate.json",
+    "boundaryguard_recovers_all": true,
+    "case_count": 3,
+    "pass": true,
+    "provenance": "controlled_fault_injection"
+  },
+  "gate": "S3_e2e_fault_matrix",
+  "next": "S3 PASS; proceed to S4 paired baselines / analysis",
+  "observed_at": "2026-08-08T20:11:24.023346+00:00",
+  "overall_pass": true,
+  "s2_prerequisite": {
+    "healthy": 20,
+    "met": true,
+    "omit_nth": 10,
+    "successful_empty": 10,
+    "summary_overall_pass": true,
+    "summary_strong_target_pass": true,
+    "truncate_last": 10
+  },
+  "strong_target_pass": true,
+  "zero_incomplete_release": {
+    "checked": 33,
+    "examples": [],
+    "incomplete_releases": 0,
+    "pass": true
+  }
+}

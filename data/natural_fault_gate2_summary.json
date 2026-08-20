@@ -1,0 +1,60 @@
+{
+  "calendar_days": [
+    "2026-08-03",
+    "2026-08-04",
+    "2026-08-05",
+    "2026-08-06",
+    "2026-08-18",
+    "2026-08-19"
+  ],
+  "epochs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "failure_class_counts": {
+    "successful_empty": 170,
+    "truncated_or_stale_nonempty": 611
+  },
+  "limitation_note": null,
+  "meets_three_silent_providers": false,
+  "provenance": "live_natural_observation",
+  "records": 4896,
+  "second_failure_class_observed": true,
+  "silent_empty_by_chain_provider": {
+    "ethereum/1rpc": 6,
+    "ethereum/flashbots": 16,
+    "optimism/1rpc": 16
+  },
+  "silent_empty_by_provider": {
+    "1rpc": 22,
+    "flashbots": 16
+  },
+  "silent_empty_by_provider_raw_rows": {
+    "1rpc": 100,
+    "flashbots": 70
+  },
+  "silent_empty_provider_count": 2,
+  "silent_empty_providers": [
+    "1rpc",
+    "flashbots"
+  ],
+  "silent_empty_unique_contexts": 38,
+  "silent_response_events": 781,
+  "silent_unique_blocks": 32,
+  "silent_unique_nonces": 32,
+  "silent_unique_response_hashes": 64,
+  "sources": {
+    "expansion": 534,
+    "multiday": 3856,
+    "targeted": 506
+  }
+}

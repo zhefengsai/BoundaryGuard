@@ -1,0 +1,131 @@
+{
+  "provenance": "saved_natural_empty_body_live_boundary_repair",
+  "note": "Single-block windows: natural successful-empty body + live boundary/repair; no canonical surround. Live primary still-incomplete counted separately when providers still omit.",
+  "attempted_contexts": 10,
+  "usable_contexts": 10,
+  "still_incomplete_live": 1,
+  "bg_completed": 10,
+  "bg_fail_closed": 0,
+  "post_primary_audit_repair_ms_completed": {
+    "n": 10,
+    "p50": 3051.598040969111,
+    "p95": 6905.440207978245,
+    "mean": 3407.5179415929597
+  },
+  "fault_path_modes": {
+    "unchecked": {
+      "n": 10,
+      "completed": 0,
+      "silent_miss": 10,
+      "fail_closed": 0,
+      "mean_requests": 1
+    },
+    "always_dual": {
+      "n": 10,
+      "completed": 10,
+      "silent_miss": 0,
+      "fail_closed": 0,
+      "mean_requests": 2
+    },
+    "boundaryguard": {
+      "n": 10,
+      "completed": 10,
+      "silent_miss": 0,
+      "fail_closed": 0,
+      "mean_requests": 4
+    }
+  },
+  "saved_nonempty_omission_reprobe": {
+    "n": 6,
+    "persistent_nonempty_target_omission": 0,
+    "explicit_error": 4,
+    "complete": 2,
+    "cases": [
+      {
+        "chain": "ethereum",
+        "provider": "1rpc",
+        "method": "eth_getLogs:blockHash",
+        "block": 25656156,
+        "nonce": 249941,
+        "saved_result_count": 1,
+        "live_primary_matching": 0,
+        "live_primary_outcome": "rpc_error",
+        "expected_delta": 1,
+        "reprobe_class": "explicit_error",
+        "bg_completed": true,
+        "bg_fail_closed": false
+      },
+      {
+        "chain": "ethereum",
+        "provider": "publicnode",
+        "method": "eth_getLogs:blockHash",
+        "block": 25656156,
+        "nonce": 249941,
+        "saved_result_count": 1,
+        "live_primary_matching": 0,
+        "live_primary_outcome": "rpc_error",
+        "expected_delta": 1,
+        "reprobe_class": "explicit_error",
+        "bg_completed": true,
+        "bg_fail_closed": false
+      },
+      {
+        "chain": "ethereum",
+        "provider": "drpc",
+        "method": "eth_getLogs:singleBlock",
+        "block": 25656156,
+        "nonce": 249941,
+        "saved_result_count": 1,
+        "live_primary_matching": 1,
+        "live_primary_outcome": "ok",
+        "expected_delta": 1,
+        "reprobe_class": "complete",
+        "bg_completed": true,
+        "bg_fail_closed": false
+      },
+      {
+        "chain": "ethereum",
+        "provider": "zeroxrpc",
+        "method": "eth_getLogs:blockHash",
+        "block": 25656156,
+        "nonce": 249941,
+        "saved_result_count": 1,
+        "live_primary_matching": 0,
+        "live_primary_outcome": "rpc_error",
+        "expected_delta": 1,
+        "reprobe_class": "explicit_error",
+        "bg_completed": true,
+        "bg_fail_closed": false
+      },
+      {
+        "chain": "ethereum",
+        "provider": "zeroxrpc",
+        "method": "eth_getLogs:singleBlock",
+        "block": 25656156,
+        "nonce": 249941,
+        "saved_result_count": 1,
+        "live_primary_matching": 1,
+        "live_primary_outcome": "ok",
+        "expected_delta": 1,
+        "reprobe_class": "complete",
+        "bg_completed": true,
+        "bg_fail_closed": false
+      },
+      {
+        "chain": "ethereum",
+        "provider": "1rpc",
+        "method": "eth_getLogs:blockHash",
+        "block": 25657798,
+        "nonce": 250052,
+        "saved_result_count": 1,
+        "live_primary_matching": 0,
+        "live_primary_outcome": "rpc_error",
+        "expected_delta": 1,
+        "reprobe_class": "explicit_error",
+        "bg_completed": true,
+        "bg_fail_closed": false
+      }
+    ]
+  },
+  "claim": "Preserved natural empty body with live boundary and repair; latency excludes the original primary response."
+}

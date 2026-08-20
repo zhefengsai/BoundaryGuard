@@ -1,0 +1,65 @@
+{
+  "always_dual_misses_correlated_silent": true,
+  "boundaryguard_recovers_all": true,
+  "cases": [
+    {
+      "always_dual_detects_omission": false,
+      "always_dual_prefix_complete": false,
+      "always_dual_returned": 0,
+      "always_dual_silently_incomplete": true,
+      "boundaryguard_detects": true,
+      "boundaryguard_located_chunks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "boundaryguard_repaired_prefix": true,
+      "expected_messages": 768,
+      "name": "both_providers_successful_empty",
+      "provenance": "controlled_fault_injection",
+      "requests_bg": 18,
+      "requests_dual": 16
+    },
+    {
+      "always_dual_detects_omission": false,
+      "always_dual_prefix_complete": false,
+      "always_dual_returned": 498,
+      "always_dual_silently_incomplete": true,
+      "bad_chunk": 0,
+      "boundaryguard_detects": true,
+      "boundaryguard_located_chunks": [
+        0
+      ],
+      "boundaryguard_repaired_prefix": true,
+      "expected_messages": 768,
+      "name": "correlated_chunk_omission_both_legs",
+      "provenance": "controlled_fault_injection",
+      "requests_bg": 11,
+      "requests_dual": 16
+    },
+    {
+      "always_dual_detects_omission": false,
+      "always_dual_prefix_complete": false,
+      "always_dual_returned": 767,
+      "always_dual_silently_incomplete": true,
+      "bad_chunk": 0,
+      "boundaryguard_detects": true,
+      "boundaryguard_located_chunks": [
+        0
+      ],
+      "boundaryguard_repaired_prefix": true,
+      "expected_messages": 768,
+      "failure_class": "truncated_or_stale_nonempty",
+      "name": "correlated_truncated_nonempty",
+      "provenance": "controlled_fault_injection"
+    }
+  ],
+  "chunk_count": 8,
+  "provenance": "controlled_fault_injection",
+  "seed": 20260803
+}

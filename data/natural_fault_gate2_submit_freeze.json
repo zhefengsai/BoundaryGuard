@@ -1,0 +1,42 @@
+{
+  "calendar_days": [
+    "2026-08-03",
+    "2026-08-04",
+    "2026-08-05",
+    "2026-08-06",
+    "2026-08-18"
+  ],
+  "epochs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "exclude_utc_dates": [
+    "2026-08-19"
+  ],
+  "failure_class_counts": {
+    "successful_empty": 145,
+    "truncated_or_stale_nonempty": 611
+  },
+  "freeze_note": "Submission freeze: UTC 2026-08-19 omitted from the printed corpus.",
+  "provenance": "live_natural_observation",
+  "records": 4416,
+  "silent_empty_provider_count": 2,
+  "silent_empty_providers": [
+    "1rpc",
+    "flashbots"
+  ],
+  "silent_unique_nonces": 32,
+  "sources": {
+    "expansion": 534,
+    "multiday": 3376,
+    "targeted": 506
+  }
+}

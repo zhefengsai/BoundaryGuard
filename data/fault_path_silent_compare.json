@@ -1,0 +1,559 @@
+{
+  "provenance": "saved_natural_empty_body_live_boundary_repair",
+  "on_saved_empty_windows": {
+    "unchecked": {
+      "n": 10,
+      "completed": 0,
+      "silent_miss": 10,
+      "fail_closed": 0,
+      "mean_requests": 1
+    },
+    "always_dual": {
+      "n": 10,
+      "completed": 10,
+      "silent_miss": 0,
+      "fail_closed": 0,
+      "mean_requests": 2
+    },
+    "boundaryguard": {
+      "n": 10,
+      "completed": 10,
+      "silent_miss": 0,
+      "fail_closed": 0,
+      "mean_requests": 4
+    }
+  },
+  "n": 10,
+  "cases": [
+    {
+      "provenance": "saved_natural_empty_body_live_boundary_repair",
+      "chain": "ethereum",
+      "provider": "1rpc",
+      "method": "eth_getLogs:singleBlock",
+      "block": 25656156,
+      "nonce": 249941,
+      "primary_mode": "saved_natural_empty_body",
+      "live_primary_still_incomplete": false,
+      "live_primary_outcome": "ok",
+      "primary_outcome": "ok",
+      "primary_matching_logs": 0,
+      "primary_result_count": 0,
+      "boundary_ok": true,
+      "expected_delta": 1,
+      "primary_ms": 0.0,
+      "live_primary_ms": 1155.627666041255,
+      "modes": {
+        "unchecked": {
+          "completed": false,
+          "silent_miss": true,
+          "fail_closed": false,
+          "requests": 1,
+          "matching_logs": 0,
+          "result_count": 0
+        },
+        "always_dual": {
+          "completed": true,
+          "silent_miss": false,
+          "fail_closed": false,
+          "requests": 2,
+          "matching_logs": 1,
+          "primary_matching": 0,
+          "secondary_matching": 1,
+          "dual_query_ms": 1395.8234579768032,
+          "secondary_outcome": "ok"
+        },
+        "boundaryguard": {
+          "completed": true,
+          "silent_miss": false,
+          "fail_closed": false,
+          "requests": 4,
+          "matching_logs": 1,
+          "detect_ms": 2058.553333976306,
+          "repair_ms": 1032.5179999927059,
+          "total_path_ms": 3091.071333969012,
+          "repair_provider": "drpc",
+          "repair_outcome": "ok",
+          "expected_delta": 1,
+          "repaired": true
+        }
+      }
+    },
+    {
+      "provenance": "saved_natural_empty_body_live_boundary_repair",
+      "chain": "ethereum",
+      "provider": "1rpc",
+      "method": "eth_getLogs:blockHash",
+      "block": 25657798,
+      "nonce": 250052,
+      "primary_mode": "saved_natural_empty_body",
+      "live_primary_still_incomplete": false,
+      "live_primary_outcome": "rpc_error",
+      "primary_outcome": "ok",
+      "primary_matching_logs": 0,
+      "primary_result_count": 0,
+      "boundary_ok": true,
+      "expected_delta": 1,
+      "primary_ms": 0.0,
+      "live_primary_ms": 1500.1942499657162,
+      "modes": {
+        "unchecked": {
+          "completed": false,
+          "silent_miss": true,
+          "fail_closed": false,
+          "requests": 1,
+          "matching_logs": 0,
+          "result_count": 0
+        },
+        "always_dual": {
+          "completed": true,
+          "silent_miss": false,
+          "fail_closed": false,
+          "requests": 2,
+          "matching_logs": 1,
+          "primary_matching": 0,
+          "secondary_matching": 1,
+          "dual_query_ms": 1381.9279169547372,
+          "secondary_outcome": "ok"
+        },
+        "boundaryguard": {
+          "completed": true,
+          "silent_miss": false,
+          "fail_closed": false,
+          "requests": 4,
+          "matching_logs": 1,
+          "detect_ms": 2077.6653749635443,
+          "repair_ms": 955.4088750155643,
+          "total_path_ms": 3033.0742499791086,
+          "repair_provider": "drpc",
+          "repair_outcome": "ok",
+          "expected_delta": 1,
+          "repaired": true
+        }
+      }
+    },
+    {
+      "provenance": "saved_natural_empty_body_live_boundary_repair",
+      "chain": "ethereum",
+      "provider": "1rpc",
+      "method": "eth_getLogs:blockHash",
+      "block": 25664696,
+      "nonce": 250496,
+      "primary_mode": "saved_natural_empty_body",
+      "live_primary_still_incomplete": false,
+      "live_primary_outcome": "rpc_error",
+      "primary_outcome": "ok",
+      "primary_matching_logs": 0,
+      "primary_result_count": 0,
+      "boundary_ok": true,
+      "expected_delta": 1,
+      "primary_ms": 0.0,
+      "live_primary_ms": 1536.3316250150092,
+      "modes": {
+        "unchecked": {
+          "completed": false,
+          "silent_miss": true,
+          "fail_closed": false,
+          "requests": 1,
+          "matching_logs": 0,
+          "result_count": 0
+        },
+        "always_dual": {
+          "completed": true,
+          "silent_miss": false,
+          "fail_closed": false,
+          "requests": 2,
+          "matching_logs": 1,
+          "primary_matching": 0,
+          "secondary_matching": 1,
+          "dual_query_ms": 1424.8086250154302,
+          "secondary_outcome": "ok"
+        },
+        "boundaryguard": {
+          "completed": true,
+          "silent_miss": false,
+          "fail_closed": false,
+          "requests": 4,
+          "matching_logs": 1,
+          "detect_ms": 1987.0955829974264,
+          "repair_ms": 1064.5024579716846,
+          "total_path_ms": 3051.598040969111,
+          "repair_provider": "drpc",
+          "repair_outcome": "ok",
+          "expected_delta": 1,
+          "repaired": true
+        }
+      }
+    },
+    {
+      "provenance": "saved_natural_empty_body_live_boundary_repair",
+      "chain": "ethereum",
+      "provider": "flashbots",
+      "method": "eth_getLogs:blockHash",
+      "block": 25656156,
+      "nonce": 249941,
+      "primary_mode": "saved_natural_empty_body",
+      "live_primary_still_incomplete": false,
+      "live_primary_outcome": "rpc_error",
+      "primary_outcome": "ok",
+      "primary_matching_logs": 0,
+      "primary_result_count": 0,
+      "boundary_ok": true,
+      "expected_delta": 1,
+      "primary_ms": 0.0,
+      "live_primary_ms": 1061.6158749908209,
+      "modes": {
+        "unchecked": {
+          "completed": false,
+          "silent_miss": true,
+          "fail_closed": false,
+          "requests": 1,
+          "matching_logs": 0,
+          "result_count": 0
+        },
+        "always_dual": {
+          "completed": true,
+          "silent_miss": false,
+          "fail_closed": false,
+          "requests": 2,
+          "matching_logs": 1,
+          "primary_matching": 0,
+          "secondary_matching": 1,
+          "dual_query_ms": 1390.3007920016535,
+          "secondary_outcome": "ok"
+        },
+        "boundaryguard": {
+          "completed": true,
+          "silent_miss": false,
+          "fail_closed": false,
+          "requests": 4,
+          "matching_logs": 1,
+          "detect_ms": 2027.1774170105346,
+          "repair_ms": 976.5453329891898,
+          "total_path_ms": 3003.7227499997243,
+          "repair_provider": "drpc",
+          "repair_outcome": "ok",
+          "expected_delta": 1,
+          "repaired": true
+        }
+      }
+    },
+    {
+      "provenance": "saved_natural_empty_body_live_boundary_repair",
+      "chain": "ethereum",
+      "provider": "flashbots",
+      "method": "eth_getLogs:blockHash",
+      "block": 25657798,
+      "nonce": 250052,
+      "primary_mode": "saved_natural_empty_body",
+      "live_primary_still_incomplete": false,
+      "live_primary_outcome": "rpc_error",
+      "primary_outcome": "ok",
+      "primary_matching_logs": 0,
+      "primary_result_count": 0,
+      "boundary_ok": true,
+      "expected_delta": 1,
+      "primary_ms": 0.0,
+      "live_primary_ms": 1078.6650830414146,
+      "modes": {
+        "unchecked": {
+          "completed": false,
+          "silent_miss": true,
+          "fail_closed": false,
+          "requests": 1,
+          "matching_logs": 0,
+          "result_count": 0
+        },
+        "always_dual": {
+          "completed": true,
+          "silent_miss": false,
+          "fail_closed": false,
+          "requests": 2,
+          "matching_logs": 1,
+          "primary_matching": 0,
+          "secondary_matching": 1,
+          "dual_query_ms": 1386.9474579696544,
+          "secondary_outcome": "ok"
+        },
+        "boundaryguard": {
+          "completed": true,
+          "silent_miss": false,
+          "fail_closed": false,
+          "requests": 4,
+          "matching_logs": 1,
+          "detect_ms": 2054.672542028129,
+          "repair_ms": 1025.6007499992847,
+          "total_path_ms": 3080.273292027414,
+          "repair_provider": "drpc",
+          "repair_outcome": "ok",
+          "expected_delta": 1,
+          "repaired": true
+        }
+      }
+    },
+    {
+      "provenance": "saved_natural_empty_body_live_boundary_repair",
+      "chain": "ethereum",
+      "provider": "flashbots",
+      "method": "eth_getLogs:blockHash",
+      "block": 25659716,
+      "nonce": 250163,
+      "primary_mode": "saved_natural_empty_body",
+      "live_primary_still_incomplete": false,
+      "live_primary_outcome": "rpc_error",
+      "primary_outcome": "ok",
+      "primary_matching_logs": 0,
+      "primary_result_count": 0,
+      "boundary_ok": true,
+      "expected_delta": 1,
+      "primary_ms": 0.0,
+      "live_primary_ms": 1048.1363750295714,
+      "modes": {
+        "unchecked": {
+          "completed": false,
+          "silent_miss": true,
+          "fail_closed": false,
+          "requests": 1,
+          "matching_logs": 0,
+          "result_count": 0
+        },
+        "always_dual": {
+          "completed": true,
+          "silent_miss": false,
+          "fail_closed": false,
+          "requests": 2,
+          "matching_logs": 1,
+          "primary_matching": 0,
+          "secondary_matching": 1,
+          "dual_query_ms": 1416.7270829784684,
+          "secondary_outcome": "ok"
+        },
+        "boundaryguard": {
+          "completed": true,
+          "silent_miss": false,
+          "fail_closed": false,
+          "requests": 4,
+          "matching_logs": 1,
+          "detect_ms": 5963.381332985591,
+          "repair_ms": 942.0588749926537,
+          "total_path_ms": 6905.440207978245,
+          "repair_provider": "drpc",
+          "repair_outcome": "ok",
+          "expected_delta": 1,
+          "repaired": true
+        }
+      }
+    },
+    {
+      "provenance": "saved_natural_empty_body_live_boundary_repair",
+      "chain": "ethereum",
+      "provider": "flashbots",
+      "method": "eth_getLogs:blockHash",
+      "block": 25661139,
+      "nonce": 250274,
+      "primary_mode": "saved_natural_empty_body",
+      "live_primary_still_incomplete": false,
+      "live_primary_outcome": "rpc_error",
+      "primary_outcome": "ok",
+      "primary_matching_logs": 0,
+      "primary_result_count": 0,
+      "boundary_ok": true,
+      "expected_delta": 1,
+      "primary_ms": 0.0,
+      "live_primary_ms": 735.6171249994077,
+      "modes": {
+        "unchecked": {
+          "completed": false,
+          "silent_miss": true,
+          "fail_closed": false,
+          "requests": 1,
+          "matching_logs": 0,
+          "result_count": 0
+        },
+        "always_dual": {
+          "completed": true,
+          "silent_miss": false,
+          "fail_closed": false,
+          "requests": 2,
+          "matching_logs": 1,
+          "primary_matching": 0,
+          "secondary_matching": 1,
+          "dual_query_ms": 1495.6887500011362,
+          "secondary_outcome": "ok"
+        },
+        "boundaryguard": {
+          "completed": true,
+          "silent_miss": false,
+          "fail_closed": false,
+          "requests": 4,
+          "matching_logs": 1,
+          "detect_ms": 2061.387875000946,
+          "repair_ms": 1001.6630419995636,
+          "total_path_ms": 3063.05091700051,
+          "repair_provider": "drpc",
+          "repair_outcome": "ok",
+          "expected_delta": 1,
+          "repaired": true
+        }
+      }
+    },
+    {
+      "provenance": "saved_natural_empty_body_live_boundary_repair",
+      "chain": "optimism",
+      "provider": "1rpc",
+      "method": "eth_getLogs:singleBlock",
+      "block": 154885429,
+      "nonce": 1646252,
+      "primary_mode": "saved_natural_empty_body",
+      "live_primary_still_incomplete": true,
+      "live_primary_outcome": "ok",
+      "primary_outcome": "ok",
+      "primary_matching_logs": 0,
+      "primary_result_count": 0,
+      "boundary_ok": true,
+      "expected_delta": 5,
+      "primary_ms": 0.0,
+      "live_primary_ms": 993.4636660036631,
+      "modes": {
+        "unchecked": {
+          "completed": false,
+          "silent_miss": true,
+          "fail_closed": false,
+          "requests": 1,
+          "matching_logs": 0,
+          "result_count": 0
+        },
+        "always_dual": {
+          "completed": true,
+          "silent_miss": false,
+          "fail_closed": false,
+          "requests": 2,
+          "matching_logs": 5,
+          "primary_matching": 0,
+          "secondary_matching": 5,
+          "dual_query_ms": 1066.065582970623,
+          "secondary_outcome": "ok"
+        },
+        "boundaryguard": {
+          "completed": true,
+          "silent_miss": false,
+          "fail_closed": false,
+          "requests": 4,
+          "matching_logs": 5,
+          "detect_ms": 1965.1976660243236,
+          "repair_ms": 1087.9997910233214,
+          "total_path_ms": 3053.197457047645,
+          "repair_provider": "official",
+          "repair_outcome": "ok",
+          "expected_delta": 5,
+          "repaired": true
+        }
+      }
+    },
+    {
+      "provenance": "saved_natural_empty_body_live_boundary_repair",
+      "chain": "optimism",
+      "provider": "1rpc",
+      "method": "eth_getLogs:blockHash",
+      "block": 154887608,
+      "nonce": 1646363,
+      "primary_mode": "saved_natural_empty_body",
+      "live_primary_still_incomplete": false,
+      "live_primary_outcome": "rpc_error",
+      "primary_outcome": "ok",
+      "primary_matching_logs": 0,
+      "primary_result_count": 0,
+      "boundary_ok": true,
+      "expected_delta": 2,
+      "primary_ms": 0.0,
+      "live_primary_ms": 1236.2582920468412,
+      "modes": {
+        "unchecked": {
+          "completed": false,
+          "silent_miss": true,
+          "fail_closed": false,
+          "requests": 1,
+          "matching_logs": 0,
+          "result_count": 0
+        },
+        "always_dual": {
+          "completed": true,
+          "silent_miss": false,
+          "fail_closed": false,
+          "requests": 2,
+          "matching_logs": 2,
+          "primary_matching": 0,
+          "secondary_matching": 2,
+          "dual_query_ms": 1048.18616702687,
+          "secondary_outcome": "ok"
+        },
+        "boundaryguard": {
+          "completed": true,
+          "silent_miss": false,
+          "fail_closed": false,
+          "requests": 4,
+          "matching_logs": 2,
+          "detect_ms": 1890.1429999968968,
+          "repair_ms": 1066.5289579774253,
+          "total_path_ms": 2956.671957974322,
+          "repair_provider": "official",
+          "repair_outcome": "ok",
+          "expected_delta": 2,
+          "repaired": true
+        }
+      }
+    },
+    {
+      "provenance": "saved_natural_empty_body_live_boundary_repair",
+      "chain": "optimism",
+      "provider": "1rpc",
+      "method": "eth_getLogs:blockHash",
+      "block": 154898031,
+      "nonce": 1646474,
+      "primary_mode": "saved_natural_empty_body",
+      "live_primary_still_incomplete": false,
+      "live_primary_outcome": "rpc_error",
+      "primary_outcome": "ok",
+      "primary_matching_logs": 0,
+      "primary_result_count": 0,
+      "boundary_ok": true,
+      "expected_delta": 1,
+      "primary_ms": 0.0,
+      "live_primary_ms": 1277.4287910433486,
+      "modes": {
+        "unchecked": {
+          "completed": false,
+          "silent_miss": true,
+          "fail_closed": false,
+          "requests": 1,
+          "matching_logs": 0,
+          "result_count": 0
+        },
+        "always_dual": {
+          "completed": true,
+          "silent_miss": false,
+          "fail_closed": false,
+          "requests": 2,
+          "matching_logs": 1,
+          "primary_matching": 0,
+          "secondary_matching": 1,
+          "dual_query_ms": 752.3121669655666,
+          "secondary_outcome": "ok"
+        },
+        "boundaryguard": {
+          "completed": true,
+          "silent_miss": false,
+          "fail_closed": false,
+          "requests": 4,
+          "matching_logs": 1,
+          "detect_ms": 2095.1929169823416,
+          "repair_ms": 741.8862920021638,
+          "total_path_ms": 2837.0792089845054,
+          "repair_provider": "official",
+          "repair_outcome": "ok",
+          "expected_delta": 1,
+          "repaired": true
+        }
+      }
+    }
+  ]
+}

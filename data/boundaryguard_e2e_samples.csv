@@ -1,0 +1,9 @@
+sample,provenance,chain,source_nonce,detect_ms,localize_ms,repair_ms,total_ms
+1,saved_natural_failure_live_replay,optimism,1646232,1913.174,2942.24,1572.531,6427.945
+2,saved_natural_failure_live_replay,optimism,1646413,1978.099,2891.672,1465.265,6335.036
+3,saved_natural_failure_live_replay,optimism,1646504,2053.047,2860.703,1300.199,6213.9490000000005
+4,saved_natural_failure_live_replay,optimism,1646595,1892.551,2673.283,1152.68,5718.514
+5,saved_natural_failure_live_replay,optimism,1646686,1855.021,2958.413,1050.699,5864.133
+6,saved_natural_failure_live_replay,optimism,1646777,2030.137,2878.422,1292.745,6201.304
+7,saved_natural_failure_live_replay,optimism,1646868,1901.772,2922.3320000000003,1322.01,6146.1140000000005
+8,saved_natural_failure_live_replay,optimism,1646958,1613.716,2883.2039999999997,1005.519,5502.439

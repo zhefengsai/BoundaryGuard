@@ -1,0 +1,129 @@
+{
+  "provenance": "derived_from_live_natural_observation_jsonl",
+  "calendar_days": [
+    "2026-08-03",
+    "2026-08-04",
+    "2026-08-05",
+    "2026-08-06"
+  ],
+  "raw_truncated_or_stale_nonempty": 611,
+  "unique_response_sha256": 43,
+  "unique_chain_block_provider": 145,
+  "unique_chain_block_provider_method": 260,
+  "unique_chain_nonce": 32,
+  "successful_empty_unique_chain_nonce": 16,
+  "overlap_chain_nonce_with_successful_empty": 16,
+  "by_provider": {
+    "drpc": 130,
+    "1rpc": 105,
+    "official": 96,
+    "publicnode": 48,
+    "zeroxrpc": 48,
+    "nodies": 48,
+    "tenderly": 48,
+    "quicknode": 48,
+    "publicnode_alt": 21,
+    "onfinality": 9,
+    "tenderly_gateway": 9,
+    "starry": 1
+  },
+  "by_chain": {
+    "polygon": 187,
+    "optimism": 151,
+    "ethereum": 149,
+    "arbitrum": 124
+  },
+  "note": "raw_truncated counts include multi-epoch re-probes through 2026-08-06; unique_* de-duplicate.",
+  "saved_context_reprobe": {
+    "n": 6,
+    "persistent_nonempty_target_omission": 0,
+    "explicit_error": 4,
+    "complete": 2,
+    "cases": [
+      {
+        "chain": "ethereum",
+        "provider": "1rpc",
+        "method": "eth_getLogs:blockHash",
+        "block": 25656156,
+        "nonce": 249941,
+        "saved_result_count": 1,
+        "live_primary_matching": 0,
+        "live_primary_outcome": "rpc_error",
+        "expected_delta": 1,
+        "reprobe_class": "explicit_error",
+        "bg_completed": true,
+        "bg_fail_closed": false
+      },
+      {
+        "chain": "ethereum",
+        "provider": "publicnode",
+        "method": "eth_getLogs:blockHash",
+        "block": 25656156,
+        "nonce": 249941,
+        "saved_result_count": 1,
+        "live_primary_matching": 0,
+        "live_primary_outcome": "rpc_error",
+        "expected_delta": 1,
+        "reprobe_class": "explicit_error",
+        "bg_completed": true,
+        "bg_fail_closed": false
+      },
+      {
+        "chain": "ethereum",
+        "provider": "drpc",
+        "method": "eth_getLogs:singleBlock",
+        "block": 25656156,
+        "nonce": 249941,
+        "saved_result_count": 1,
+        "live_primary_matching": 1,
+        "live_primary_outcome": "ok",
+        "expected_delta": 1,
+        "reprobe_class": "complete",
+        "bg_completed": true,
+        "bg_fail_closed": false
+      },
+      {
+        "chain": "ethereum",
+        "provider": "zeroxrpc",
+        "method": "eth_getLogs:blockHash",
+        "block": 25656156,
+        "nonce": 249941,
+        "saved_result_count": 1,
+        "live_primary_matching": 0,
+        "live_primary_outcome": "rpc_error",
+        "expected_delta": 1,
+        "reprobe_class": "explicit_error",
+        "bg_completed": true,
+        "bg_fail_closed": false
+      },
+      {
+        "chain": "ethereum",
+        "provider": "zeroxrpc",
+        "method": "eth_getLogs:singleBlock",
+        "block": 25656156,
+        "nonce": 249941,
+        "saved_result_count": 1,
+        "live_primary_matching": 1,
+        "live_primary_outcome": "ok",
+        "expected_delta": 1,
+        "reprobe_class": "complete",
+        "bg_completed": true,
+        "bg_fail_closed": false
+      },
+      {
+        "chain": "ethereum",
+        "provider": "1rpc",
+        "method": "eth_getLogs:blockHash",
+        "block": 25657798,
+        "nonce": 250052,
+        "saved_result_count": 1,
+        "live_primary_matching": 0,
+        "live_primary_outcome": "rpc_error",
+        "expected_delta": 1,
+        "reprobe_class": "explicit_error",
+        "bg_completed": true,
+        "bg_fail_closed": false
+      }
+    ]
+  }
+}

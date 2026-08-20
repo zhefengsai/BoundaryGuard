@@ -1,0 +1,33 @@
+{
+  "provenance": "saved natural silent-empty observations replayed with live boundary and repair RPCs",
+  "n": 8,
+  "definition": {
+    "detect": "two root-boundary RPC service latencies",
+    "localize": "subsequent binary-localization boundary RPC service latencies",
+    "repair": "repair-provider eth_getLogs service latency",
+    "total": "sequential detect + localize + repair service path"
+  },
+  "limitation": "Excludes client-side pacing sleeps; no retry backoff occurred in these successful samples.",
+  "percentiles_ms": {
+    "detect": {
+      "p50": 1907.473,
+      "p95": 2045.028,
+      "p99": 2051.443
+    },
+    "localize": {
+      "p50": 2887.438,
+      "p95": 2952.752,
+      "p99": 2957.281
+    },
+    "repair": {
+      "p50": 1296.472,
+      "p95": 1534.988,
+      "p99": 1565.022
+    },
+    "total": {
+      "p50": 6173.709,
+      "p95": 6395.427,
+      "p99": 6421.441
+    }
+  }
+}

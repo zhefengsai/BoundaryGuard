@@ -1,0 +1,34 @@
+{
+  "provenance": "live_natural_observation",
+  "source": "work/data/natural_fault_multiday.jsonl",
+  "epoch": 7,
+  "note": "Same-epoch contemporaneous successful-empty at 1RPC and Flashbots on Ethereum; always-dual sees no disagreement.",
+  "cases": [
+    {
+      "nonce": 250163,
+      "chain": "ethereum",
+      "method": "eth_getLogs:blockHash",
+      "expected_messages": 1,
+      "one_rpc_returned": 0,
+      "flashbots_returned": 0,
+      "always_dual_returned": 0,
+      "boundaryguard_detects": true,
+      "delta_s": 2.864,
+      "one_rpc_observed_at": 1785979560.8722222,
+      "flashbots_observed_at": 1785979563.7361917
+    },
+    {
+      "nonce": 250274,
+      "chain": "ethereum",
+      "method": "eth_getLogs:blockHash",
+      "expected_messages": 1,
+      "one_rpc_returned": 0,
+      "flashbots_returned": 0,
+      "always_dual_returned": 0,
+      "boundaryguard_detects": true,
+      "delta_s": 2.725,
+      "one_rpc_observed_at": 1785979566.5549634,
+      "flashbots_observed_at": 1785979569.28035
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "chain_id": "optimism",
+  "mailbox": "0x0000000000000000000000000000000000000000",
+  "primary_url": "https://PRIMARY_RPC",
+  "boundary_url": "https://BOUNDARY_RPC",
+  "repair_url": "https://REPAIR_RPC",
+  "timeout_s": 20.0,
+  "retry_count": 2,
+  "retry_base_s": 0.25,
+  "chunk_count": 8,
+  "confirmation_depth": 64,
+  "finalized_tip": null,
+  "byzantine_inclusion": false,
+  "trace_path": "data/proxy_trace.jsonl"
+}

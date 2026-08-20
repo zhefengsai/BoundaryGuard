@@ -1,0 +1,239 @@
+{
+  "artifact": "data/strong_e2e/s4_ground_truth.jsonl",
+  "consistency": {
+    "mismatch_examples": [],
+    "pass": true,
+    "saved_oracle_values_checked": 1027,
+    "saved_vs_frozen_mismatches": 0
+  },
+  "coverage_pct": 100.0,
+  "frozen_at": "2026-08-12T02:19:20.404109+00:00",
+  "gate": "S4_independent_ground_truth",
+  "min_agreement": 2,
+  "modes": {
+    "always_dual": {
+      "all_responses_auditable": true,
+      "mean_auditable": 198.0,
+      "mean_count_complete": 198.0,
+      "mean_issued": 198.0,
+      "reps": [
+        {
+          "auditable": 198,
+          "count_complete": 198,
+          "count_incomplete": 0,
+          "issued": 198,
+          "rep": 0
+        },
+        {
+          "auditable": 198,
+          "count_complete": 198,
+          "count_incomplete": 0,
+          "issued": 198,
+          "rep": 1
+        },
+        {
+          "auditable": 198,
+          "count_complete": 198,
+          "count_incomplete": 0,
+          "issued": 198,
+          "rep": 2
+        },
+        {
+          "auditable": 198,
+          "count_complete": 198,
+          "count_incomplete": 0,
+          "issued": 198,
+          "rep": 3
+        },
+        {
+          "auditable": 198,
+          "count_complete": 198,
+          "count_incomplete": 0,
+          "issued": 198,
+          "rep": 4
+        }
+      ]
+    },
+    "boundaryguard_archive": {
+      "all_responses_auditable": true,
+      "mean_auditable": 198.0,
+      "mean_count_complete": 198.0,
+      "mean_issued": 198.0,
+      "reps": [
+        {
+          "auditable": 198,
+          "count_complete": 198,
+          "count_incomplete": 0,
+          "issued": 198,
+          "rep": 0
+        },
+        {
+          "auditable": 198,
+          "count_complete": 198,
+          "count_incomplete": 0,
+          "issued": 198,
+          "rep": 1
+        },
+        {
+          "auditable": 198,
+          "count_complete": 198,
+          "count_incomplete": 0,
+          "issued": 198,
+          "rep": 2
+        },
+        {
+          "auditable": 198,
+          "count_complete": 198,
+          "count_incomplete": 0,
+          "issued": 198,
+          "rep": 3
+        },
+        {
+          "auditable": 198,
+          "count_complete": 198,
+          "count_incomplete": 0,
+          "issued": 198,
+          "rep": 4
+        }
+      ]
+    },
+    "boundaryguard_single": {
+      "all_responses_auditable": true,
+      "mean_auditable": 198.0,
+      "mean_count_complete": 50.2,
+      "mean_issued": 198.0,
+      "reps": [
+        {
+          "auditable": 198,
+          "count_complete": 43,
+          "count_incomplete": 155,
+          "issued": 198,
+          "rep": 0
+        },
+        {
+          "auditable": 198,
+          "count_complete": 60,
+          "count_incomplete": 138,
+          "issued": 198,
+          "rep": 1
+        },
+        {
+          "auditable": 198,
+          "count_complete": 55,
+          "count_incomplete": 143,
+          "issued": 198,
+          "rep": 2
+        },
+        {
+          "auditable": 198,
+          "count_complete": 44,
+          "count_incomplete": 154,
+          "issued": 198,
+          "rep": 3
+        },
+        {
+          "auditable": 198,
+          "count_complete": 49,
+          "count_incomplete": 149,
+          "issued": 198,
+          "rep": 4
+        }
+      ]
+    },
+    "error_fallback": {
+      "all_responses_auditable": true,
+      "mean_auditable": 198.0,
+      "mean_count_complete": 198.0,
+      "mean_issued": 198.0,
+      "reps": [
+        {
+          "auditable": 198,
+          "count_complete": 198,
+          "count_incomplete": 0,
+          "issued": 198,
+          "rep": 0
+        },
+        {
+          "auditable": 198,
+          "count_complete": 198,
+          "count_incomplete": 0,
+          "issued": 198,
+          "rep": 1
+        },
+        {
+          "auditable": 198,
+          "count_complete": 198,
+          "count_incomplete": 0,
+          "issued": 198,
+          "rep": 2
+        },
+        {
+          "auditable": 198,
+          "count_complete": 198,
+          "count_incomplete": 0,
+          "issued": 198,
+          "rep": 3
+        },
+        {
+          "auditable": 198,
+          "count_complete": 198,
+          "count_incomplete": 0,
+          "issued": 198,
+          "rep": 4
+        }
+      ]
+    },
+    "unchecked": {
+      "all_responses_auditable": true,
+      "mean_auditable": 198.0,
+      "mean_count_complete": 198.0,
+      "mean_issued": 198.0,
+      "reps": [
+        {
+          "auditable": 198,
+          "count_complete": 198,
+          "count_incomplete": 0,
+          "issued": 198,
+          "rep": 0
+        },
+        {
+          "auditable": 198,
+          "count_complete": 198,
+          "count_incomplete": 0,
+          "issued": 198,
+          "rep": 1
+        },
+        {
+          "auditable": 198,
+          "count_complete": 198,
+          "count_incomplete": 0,
+          "issued": 198,
+          "rep": 2
+        },
+        {
+          "auditable": 198,
+          "count_complete": 198,
+          "count_incomplete": 0,
+          "issued": 198,
+          "rep": 3
+        },
+        {
+          "auditable": 198,
+          "count_complete": 198,
+          "count_incomplete": 0,
+          "issued": 198,
+          "rep": 4
+        }
+      ]
+    }
+  },
+  "note": "Frozen after the original S4 request execution, before this reanalysis; raw S4 samples are unchanged. Each verified block requires matching historical Mailbox.nonce() pairs from two provider organizations.",
+  "provenance": "live_independent_posthoc_ground_truth_freeze",
+  "provider_organizations": [
+    "drpc",
+    "tenderly",
+    "publicnode"
+  ],
+  "query_blocks": 691,
+  "verified_blocks": 691
+}

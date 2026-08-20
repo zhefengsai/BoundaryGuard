@@ -1,0 +1,1721 @@
+{
+  "configuration": {
+    "boundary_and_repair": "dRPC live historical RPC",
+    "chain": "optimism",
+    "chunk_width": 10000,
+    "chunks_per_batch": 8,
+    "eth_call_cu": 26,
+    "log_cu": 60,
+    "primary": "1RPC saved-real-failure trace replay"
+  },
+  "scenarios": [
+    {
+      "actual_bad_chunk": null,
+      "all_repairs_succeeded": true,
+      "always_dual_cu": 960,
+      "bad_block": null,
+      "boundary_calls": 2,
+      "boundary_records": [
+        {
+          "block": 154880475,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 992.084,
+          "nonce": 1646147,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154960475,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 939.976,
+          "nonce": 1646915,
+          "outcome": "ok",
+          "response_bytes": 102
+        }
+      ],
+      "boundaryguard_cu": 532,
+      "canonical_counts": [
+        270,
+        109,
+        55,
+        72,
+        36,
+        46,
+        91,
+        89
+      ],
+      "chunks": [
+        {
+          "end": 154890475,
+          "start": 154880476
+        },
+        {
+          "end": 154900475,
+          "start": 154890476
+        },
+        {
+          "end": 154910475,
+          "start": 154900476
+        },
+        {
+          "end": 154920475,
+          "start": 154910476
+        },
+        {
+          "end": 154930475,
+          "start": 154920476
+        },
+        {
+          "end": 154940475,
+          "start": 154930476
+        },
+        {
+          "end": 154950475,
+          "start": 154940476
+        },
+        {
+          "end": 154960475,
+          "start": 154950476
+        }
+      ],
+      "correctly_localized": true,
+      "cu_saving_pct": 44.583333333333336,
+      "decisions": [
+        {
+          "end_block": 154960475,
+          "expected": 768,
+          "left_chunk": 0,
+          "mismatch": false,
+          "observed": 768,
+          "right_chunk_exclusive": 8,
+          "start_block": 154880476
+        }
+      ],
+      "located_chunks": [],
+      "omitted_dispatches": 0,
+      "primary_log_calls": 8,
+      "primary_observed_counts": [
+        270,
+        109,
+        55,
+        72,
+        36,
+        46,
+        91,
+        89
+      ],
+      "repair_log_calls": 0,
+      "repairs": []
+    },
+    {
+      "actual_bad_chunk": 0,
+      "all_repairs_succeeded": true,
+      "always_dual_cu": 960,
+      "bad_block": 154883600,
+      "boundary_calls": 5,
+      "boundary_records": [
+        {
+          "block": 154880475,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 970.113,
+          "nonce": 1646147,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154960475,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 943.061,
+          "nonce": 1646915,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154920475,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 969.941,
+          "nonce": 1646653,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154900475,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 995.972,
+          "nonce": 1646526,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154890475,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 976.327,
+          "nonce": 1646417,
+          "outcome": "ok",
+          "response_bytes": 102
+        }
+      ],
+      "boundaryguard_cu": 670,
+      "canonical_counts": [
+        270,
+        109,
+        55,
+        72,
+        36,
+        46,
+        91,
+        89
+      ],
+      "chunks": [
+        {
+          "end": 154890475,
+          "start": 154880476
+        },
+        {
+          "end": 154900475,
+          "start": 154890476
+        },
+        {
+          "end": 154910475,
+          "start": 154900476
+        },
+        {
+          "end": 154920475,
+          "start": 154910476
+        },
+        {
+          "end": 154930475,
+          "start": 154920476
+        },
+        {
+          "end": 154940475,
+          "start": 154930476
+        },
+        {
+          "end": 154950475,
+          "start": 154940476
+        },
+        {
+          "end": 154960475,
+          "start": 154950476
+        }
+      ],
+      "correctly_localized": true,
+      "cu_saving_pct": 30.208333333333332,
+      "decisions": [
+        {
+          "end_block": 154960475,
+          "expected": 768,
+          "left_chunk": 0,
+          "mismatch": true,
+          "observed": 763,
+          "right_chunk_exclusive": 8,
+          "start_block": 154880476
+        },
+        {
+          "end_block": 154920475,
+          "expected": 506,
+          "left_chunk": 0,
+          "mismatch": true,
+          "observed": 501,
+          "right_chunk_exclusive": 4,
+          "start_block": 154880476
+        },
+        {
+          "end_block": 154900475,
+          "expected": 379,
+          "left_chunk": 0,
+          "mismatch": true,
+          "observed": 374,
+          "right_chunk_exclusive": 2,
+          "start_block": 154880476
+        },
+        {
+          "end_block": 154890475,
+          "expected": 270,
+          "left_chunk": 0,
+          "mismatch": true,
+          "observed": 265,
+          "right_chunk_exclusive": 1,
+          "start_block": 154880476
+        },
+        {
+          "end_block": 154900475,
+          "expected": 109,
+          "left_chunk": 1,
+          "mismatch": false,
+          "observed": 109,
+          "right_chunk_exclusive": 2,
+          "start_block": 154890476
+        },
+        {
+          "end_block": 154920475,
+          "expected": 127,
+          "left_chunk": 2,
+          "mismatch": false,
+          "observed": 127,
+          "right_chunk_exclusive": 4,
+          "start_block": 154900476
+        },
+        {
+          "end_block": 154960475,
+          "expected": 262,
+          "left_chunk": 4,
+          "mismatch": false,
+          "observed": 262,
+          "right_chunk_exclusive": 8,
+          "start_block": 154920476
+        }
+      ],
+      "located_chunks": [
+        0
+      ],
+      "omitted_dispatches": 5,
+      "primary_log_calls": 8,
+      "primary_observed_counts": [
+        265,
+        109,
+        55,
+        72,
+        36,
+        46,
+        91,
+        89
+      ],
+      "repair_log_calls": 1,
+      "repairs": [
+        {
+          "chunk_index": 0,
+          "count": 270,
+          "end": 154890475,
+          "error": null,
+          "expected": 270,
+          "http_status": 200,
+          "latency_ms": 1572.531,
+          "outcome": "ok",
+          "response_bytes": 311347,
+          "start": 154880476,
+          "success": true
+        }
+      ],
+      "source_nonce": 1646232,
+      "source_primary_outcome": "ok",
+      "source_primary_result_count": 0
+    },
+    {
+      "actual_bad_chunk": 0,
+      "all_repairs_succeeded": true,
+      "always_dual_cu": 960,
+      "bad_block": 154890091,
+      "boundary_calls": 5,
+      "boundary_records": [
+        {
+          "block": 154880475,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 1015.67,
+          "nonce": 1646147,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154960475,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 962.429,
+          "nonce": 1646915,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154920475,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 927.739,
+          "nonce": 1646653,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154900475,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 932.996,
+          "nonce": 1646526,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154890475,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 1030.937,
+          "nonce": 1646417,
+          "outcome": "ok",
+          "response_bytes": 102
+        }
+      ],
+      "boundaryguard_cu": 670,
+      "canonical_counts": [
+        270,
+        109,
+        55,
+        72,
+        36,
+        46,
+        91,
+        89
+      ],
+      "chunks": [
+        {
+          "end": 154890475,
+          "start": 154880476
+        },
+        {
+          "end": 154900475,
+          "start": 154890476
+        },
+        {
+          "end": 154910475,
+          "start": 154900476
+        },
+        {
+          "end": 154920475,
+          "start": 154910476
+        },
+        {
+          "end": 154930475,
+          "start": 154920476
+        },
+        {
+          "end": 154940475,
+          "start": 154930476
+        },
+        {
+          "end": 154950475,
+          "start": 154940476
+        },
+        {
+          "end": 154960475,
+          "start": 154950476
+        }
+      ],
+      "correctly_localized": true,
+      "cu_saving_pct": 30.208333333333332,
+      "decisions": [
+        {
+          "end_block": 154960475,
+          "expected": 768,
+          "left_chunk": 0,
+          "mismatch": true,
+          "observed": 767,
+          "right_chunk_exclusive": 8,
+          "start_block": 154880476
+        },
+        {
+          "end_block": 154920475,
+          "expected": 506,
+          "left_chunk": 0,
+          "mismatch": true,
+          "observed": 505,
+          "right_chunk_exclusive": 4,
+          "start_block": 154880476
+        },
+        {
+          "end_block": 154900475,
+          "expected": 379,
+          "left_chunk": 0,
+          "mismatch": true,
+          "observed": 378,
+          "right_chunk_exclusive": 2,
+          "start_block": 154880476
+        },
+        {
+          "end_block": 154890475,
+          "expected": 270,
+          "left_chunk": 0,
+          "mismatch": true,
+          "observed": 269,
+          "right_chunk_exclusive": 1,
+          "start_block": 154880476
+        },
+        {
+          "end_block": 154900475,
+          "expected": 109,
+          "left_chunk": 1,
+          "mismatch": false,
+          "observed": 109,
+          "right_chunk_exclusive": 2,
+          "start_block": 154890476
+        },
+        {
+          "end_block": 154920475,
+          "expected": 127,
+          "left_chunk": 2,
+          "mismatch": false,
+          "observed": 127,
+          "right_chunk_exclusive": 4,
+          "start_block": 154900476
+        },
+        {
+          "end_block": 154960475,
+          "expected": 262,
+          "left_chunk": 4,
+          "mismatch": false,
+          "observed": 262,
+          "right_chunk_exclusive": 8,
+          "start_block": 154920476
+        }
+      ],
+      "located_chunks": [
+        0
+      ],
+      "omitted_dispatches": 1,
+      "primary_log_calls": 8,
+      "primary_observed_counts": [
+        269,
+        109,
+        55,
+        72,
+        36,
+        46,
+        91,
+        89
+      ],
+      "repair_log_calls": 1,
+      "repairs": [
+        {
+          "chunk_index": 0,
+          "count": 270,
+          "end": 154890475,
+          "error": null,
+          "expected": 270,
+          "http_status": 200,
+          "latency_ms": 1465.265,
+          "outcome": "ok",
+          "response_bytes": 311347,
+          "start": 154880476,
+          "success": true
+        }
+      ],
+      "source_nonce": 1646413,
+      "source_primary_outcome": "ok",
+      "source_primary_result_count": 0
+    },
+    {
+      "actual_bad_chunk": 1,
+      "all_repairs_succeeded": true,
+      "always_dual_cu": 960,
+      "bad_block": 154899451,
+      "boundary_calls": 5,
+      "boundary_records": [
+        {
+          "block": 154880475,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 939.748,
+          "nonce": 1646147,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154960475,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 1113.299,
+          "nonce": 1646915,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154920475,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 949.459,
+          "nonce": 1646653,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154900475,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 921.908,
+          "nonce": 1646526,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154890475,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 989.336,
+          "nonce": 1646417,
+          "outcome": "ok",
+          "response_bytes": 102
+        }
+      ],
+      "boundaryguard_cu": 670,
+      "canonical_counts": [
+        270,
+        109,
+        55,
+        72,
+        36,
+        46,
+        91,
+        89
+      ],
+      "chunks": [
+        {
+          "end": 154890475,
+          "start": 154880476
+        },
+        {
+          "end": 154900475,
+          "start": 154890476
+        },
+        {
+          "end": 154910475,
+          "start": 154900476
+        },
+        {
+          "end": 154920475,
+          "start": 154910476
+        },
+        {
+          "end": 154930475,
+          "start": 154920476
+        },
+        {
+          "end": 154940475,
+          "start": 154930476
+        },
+        {
+          "end": 154950475,
+          "start": 154940476
+        },
+        {
+          "end": 154960475,
+          "start": 154950476
+        }
+      ],
+      "correctly_localized": true,
+      "cu_saving_pct": 30.208333333333332,
+      "decisions": [
+        {
+          "end_block": 154960475,
+          "expected": 768,
+          "left_chunk": 0,
+          "mismatch": true,
+          "observed": 754,
+          "right_chunk_exclusive": 8,
+          "start_block": 154880476
+        },
+        {
+          "end_block": 154920475,
+          "expected": 506,
+          "left_chunk": 0,
+          "mismatch": true,
+          "observed": 492,
+          "right_chunk_exclusive": 4,
+          "start_block": 154880476
+        },
+        {
+          "end_block": 154900475,
+          "expected": 379,
+          "left_chunk": 0,
+          "mismatch": true,
+          "observed": 365,
+          "right_chunk_exclusive": 2,
+          "start_block": 154880476
+        },
+        {
+          "end_block": 154890475,
+          "expected": 270,
+          "left_chunk": 0,
+          "mismatch": false,
+          "observed": 270,
+          "right_chunk_exclusive": 1,
+          "start_block": 154880476
+        },
+        {
+          "end_block": 154900475,
+          "expected": 109,
+          "left_chunk": 1,
+          "mismatch": true,
+          "observed": 95,
+          "right_chunk_exclusive": 2,
+          "start_block": 154890476
+        },
+        {
+          "end_block": 154920475,
+          "expected": 127,
+          "left_chunk": 2,
+          "mismatch": false,
+          "observed": 127,
+          "right_chunk_exclusive": 4,
+          "start_block": 154900476
+        },
+        {
+          "end_block": 154960475,
+          "expected": 262,
+          "left_chunk": 4,
+          "mismatch": false,
+          "observed": 262,
+          "right_chunk_exclusive": 8,
+          "start_block": 154920476
+        }
+      ],
+      "located_chunks": [
+        1
+      ],
+      "omitted_dispatches": 14,
+      "primary_log_calls": 8,
+      "primary_observed_counts": [
+        270,
+        95,
+        55,
+        72,
+        36,
+        46,
+        91,
+        89
+      ],
+      "repair_log_calls": 1,
+      "repairs": [
+        {
+          "chunk_index": 1,
+          "count": 109,
+          "end": 154900475,
+          "error": null,
+          "expected": 109,
+          "http_status": 200,
+          "latency_ms": 1300.199,
+          "outcome": "ok",
+          "response_bytes": 131398,
+          "start": 154890476,
+          "success": true
+        }
+      ],
+      "source_nonce": 1646504,
+      "source_primary_outcome": "ok",
+      "source_primary_result_count": 0
+    },
+    {
+      "actual_bad_chunk": 3,
+      "all_repairs_succeeded": true,
+      "always_dual_cu": 960,
+      "bad_block": 154911635,
+      "boundary_calls": 5,
+      "boundary_records": [
+        {
+          "block": 154880475,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 924.028,
+          "nonce": 1646147,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154960475,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 968.523,
+          "nonce": 1646915,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154920475,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 1037.278,
+          "nonce": 1646653,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154900475,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 981.817,
+          "nonce": 1646526,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154910475,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 654.188,
+          "nonce": 1646581,
+          "outcome": "ok",
+          "response_bytes": 102
+        }
+      ],
+      "boundaryguard_cu": 670,
+      "canonical_counts": [
+        270,
+        109,
+        55,
+        72,
+        36,
+        46,
+        91,
+        89
+      ],
+      "chunks": [
+        {
+          "end": 154890475,
+          "start": 154880476
+        },
+        {
+          "end": 154900475,
+          "start": 154890476
+        },
+        {
+          "end": 154910475,
+          "start": 154900476
+        },
+        {
+          "end": 154920475,
+          "start": 154910476
+        },
+        {
+          "end": 154930475,
+          "start": 154920476
+        },
+        {
+          "end": 154940475,
+          "start": 154930476
+        },
+        {
+          "end": 154950475,
+          "start": 154940476
+        },
+        {
+          "end": 154960475,
+          "start": 154950476
+        }
+      ],
+      "correctly_localized": true,
+      "cu_saving_pct": 30.208333333333332,
+      "decisions": [
+        {
+          "end_block": 154960475,
+          "expected": 768,
+          "left_chunk": 0,
+          "mismatch": true,
+          "observed": 760,
+          "right_chunk_exclusive": 8,
+          "start_block": 154880476
+        },
+        {
+          "end_block": 154920475,
+          "expected": 506,
+          "left_chunk": 0,
+          "mismatch": true,
+          "observed": 498,
+          "right_chunk_exclusive": 4,
+          "start_block": 154880476
+        },
+        {
+          "end_block": 154900475,
+          "expected": 379,
+          "left_chunk": 0,
+          "mismatch": false,
+          "observed": 379,
+          "right_chunk_exclusive": 2,
+          "start_block": 154880476
+        },
+        {
+          "end_block": 154920475,
+          "expected": 127,
+          "left_chunk": 2,
+          "mismatch": true,
+          "observed": 119,
+          "right_chunk_exclusive": 4,
+          "start_block": 154900476
+        },
+        {
+          "end_block": 154910475,
+          "expected": 55,
+          "left_chunk": 2,
+          "mismatch": false,
+          "observed": 55,
+          "right_chunk_exclusive": 3,
+          "start_block": 154900476
+        },
+        {
+          "end_block": 154920475,
+          "expected": 72,
+          "left_chunk": 3,
+          "mismatch": true,
+          "observed": 64,
+          "right_chunk_exclusive": 4,
+          "start_block": 154910476
+        },
+        {
+          "end_block": 154960475,
+          "expected": 262,
+          "left_chunk": 4,
+          "mismatch": false,
+          "observed": 262,
+          "right_chunk_exclusive": 8,
+          "start_block": 154920476
+        }
+      ],
+      "located_chunks": [
+        3
+      ],
+      "omitted_dispatches": 8,
+      "primary_log_calls": 8,
+      "primary_observed_counts": [
+        270,
+        109,
+        55,
+        64,
+        36,
+        46,
+        91,
+        89
+      ],
+      "repair_log_calls": 1,
+      "repairs": [
+        {
+          "chunk_index": 3,
+          "count": 72,
+          "end": 154920475,
+          "error": null,
+          "expected": 72,
+          "http_status": 200,
+          "latency_ms": 1152.68,
+          "outcome": "ok",
+          "response_bytes": 81220,
+          "start": 154910476,
+          "success": true
+        }
+      ],
+      "source_nonce": 1646595,
+      "source_primary_outcome": "ok",
+      "source_primary_result_count": 0
+    },
+    {
+      "actual_bad_chunk": 4,
+      "all_repairs_succeeded": true,
+      "always_dual_cu": 960,
+      "bad_block": 154929772,
+      "boundary_calls": 5,
+      "boundary_records": [
+        {
+          "block": 154880475,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 917.799,
+          "nonce": 1646147,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154960475,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 937.222,
+          "nonce": 1646915,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154920475,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 936.462,
+          "nonce": 1646653,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154940475,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 982.013,
+          "nonce": 1646735,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154930475,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 1039.938,
+          "nonce": 1646689,
+          "outcome": "ok",
+          "response_bytes": 102
+        }
+      ],
+      "boundaryguard_cu": 670,
+      "canonical_counts": [
+        270,
+        109,
+        55,
+        72,
+        36,
+        46,
+        91,
+        89
+      ],
+      "chunks": [
+        {
+          "end": 154890475,
+          "start": 154880476
+        },
+        {
+          "end": 154900475,
+          "start": 154890476
+        },
+        {
+          "end": 154910475,
+          "start": 154900476
+        },
+        {
+          "end": 154920475,
+          "start": 154910476
+        },
+        {
+          "end": 154930475,
+          "start": 154920476
+        },
+        {
+          "end": 154940475,
+          "start": 154930476
+        },
+        {
+          "end": 154950475,
+          "start": 154940476
+        },
+        {
+          "end": 154960475,
+          "start": 154950476
+        }
+      ],
+      "correctly_localized": true,
+      "cu_saving_pct": 30.208333333333332,
+      "decisions": [
+        {
+          "end_block": 154960475,
+          "expected": 768,
+          "left_chunk": 0,
+          "mismatch": true,
+          "observed": 767,
+          "right_chunk_exclusive": 8,
+          "start_block": 154880476
+        },
+        {
+          "end_block": 154920475,
+          "expected": 506,
+          "left_chunk": 0,
+          "mismatch": false,
+          "observed": 506,
+          "right_chunk_exclusive": 4,
+          "start_block": 154880476
+        },
+        {
+          "end_block": 154960475,
+          "expected": 262,
+          "left_chunk": 4,
+          "mismatch": true,
+          "observed": 261,
+          "right_chunk_exclusive": 8,
+          "start_block": 154920476
+        },
+        {
+          "end_block": 154940475,
+          "expected": 82,
+          "left_chunk": 4,
+          "mismatch": true,
+          "observed": 81,
+          "right_chunk_exclusive": 6,
+          "start_block": 154920476
+        },
+        {
+          "end_block": 154930475,
+          "expected": 36,
+          "left_chunk": 4,
+          "mismatch": true,
+          "observed": 35,
+          "right_chunk_exclusive": 5,
+          "start_block": 154920476
+        },
+        {
+          "end_block": 154940475,
+          "expected": 46,
+          "left_chunk": 5,
+          "mismatch": false,
+          "observed": 46,
+          "right_chunk_exclusive": 6,
+          "start_block": 154930476
+        },
+        {
+          "end_block": 154960475,
+          "expected": 180,
+          "left_chunk": 6,
+          "mismatch": false,
+          "observed": 180,
+          "right_chunk_exclusive": 8,
+          "start_block": 154940476
+        }
+      ],
+      "located_chunks": [
+        4
+      ],
+      "omitted_dispatches": 1,
+      "primary_log_calls": 8,
+      "primary_observed_counts": [
+        270,
+        109,
+        55,
+        72,
+        35,
+        46,
+        91,
+        89
+      ],
+      "repair_log_calls": 1,
+      "repairs": [
+        {
+          "chunk_index": 4,
+          "count": 36,
+          "end": 154930475,
+          "error": null,
+          "expected": 36,
+          "http_status": 200,
+          "latency_ms": 1050.699,
+          "outcome": "ok",
+          "response_bytes": 39573,
+          "start": 154920476,
+          "success": true
+        }
+      ],
+      "source_nonce": 1646686,
+      "source_primary_outcome": "ok",
+      "source_primary_result_count": 0
+    },
+    {
+      "actual_bad_chunk": 4,
+      "all_repairs_succeeded": true,
+      "always_dual_cu": 960,
+      "bad_block": 154945690,
+      "boundary_calls": 5,
+      "boundary_records": [
+        {
+          "block": 154899999,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 1097.379,
+          "nonce": 1646526,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154979999,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 932.758,
+          "nonce": 1646988,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154939999,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 970.448,
+          "nonce": 1646730,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154959999,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 925.188,
+          "nonce": 1646914,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154949999,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 982.786,
+          "nonce": 1646821,
+          "outcome": "ok",
+          "response_bytes": 102
+        }
+      ],
+      "boundaryguard_cu": 670,
+      "canonical_counts": [
+        48,
+        78,
+        37,
+        41,
+        91,
+        93,
+        53,
+        21
+      ],
+      "chunks": [
+        {
+          "end": 154909999,
+          "start": 154900000
+        },
+        {
+          "end": 154919999,
+          "start": 154910000
+        },
+        {
+          "end": 154929999,
+          "start": 154920000
+        },
+        {
+          "end": 154939999,
+          "start": 154930000
+        },
+        {
+          "end": 154949999,
+          "start": 154940000
+        },
+        {
+          "end": 154959999,
+          "start": 154950000
+        },
+        {
+          "end": 154969999,
+          "start": 154960000
+        },
+        {
+          "end": 154979999,
+          "start": 154970000
+        }
+      ],
+      "correctly_localized": true,
+      "cu_saving_pct": 30.208333333333332,
+      "decisions": [
+        {
+          "end_block": 154979999,
+          "expected": 462,
+          "left_chunk": 0,
+          "mismatch": true,
+          "observed": 461,
+          "right_chunk_exclusive": 8,
+          "start_block": 154900000
+        },
+        {
+          "end_block": 154939999,
+          "expected": 204,
+          "left_chunk": 0,
+          "mismatch": false,
+          "observed": 204,
+          "right_chunk_exclusive": 4,
+          "start_block": 154900000
+        },
+        {
+          "end_block": 154979999,
+          "expected": 258,
+          "left_chunk": 4,
+          "mismatch": true,
+          "observed": 257,
+          "right_chunk_exclusive": 8,
+          "start_block": 154940000
+        },
+        {
+          "end_block": 154959999,
+          "expected": 184,
+          "left_chunk": 4,
+          "mismatch": true,
+          "observed": 183,
+          "right_chunk_exclusive": 6,
+          "start_block": 154940000
+        },
+        {
+          "end_block": 154949999,
+          "expected": 91,
+          "left_chunk": 4,
+          "mismatch": true,
+          "observed": 90,
+          "right_chunk_exclusive": 5,
+          "start_block": 154940000
+        },
+        {
+          "end_block": 154959999,
+          "expected": 93,
+          "left_chunk": 5,
+          "mismatch": false,
+          "observed": 93,
+          "right_chunk_exclusive": 6,
+          "start_block": 154950000
+        },
+        {
+          "end_block": 154979999,
+          "expected": 74,
+          "left_chunk": 6,
+          "mismatch": false,
+          "observed": 74,
+          "right_chunk_exclusive": 8,
+          "start_block": 154960000
+        }
+      ],
+      "located_chunks": [
+        4
+      ],
+      "omitted_dispatches": 1,
+      "primary_log_calls": 8,
+      "primary_observed_counts": [
+        48,
+        78,
+        37,
+        41,
+        90,
+        93,
+        53,
+        21
+      ],
+      "repair_log_calls": 1,
+      "repairs": [
+        {
+          "chunk_index": 4,
+          "count": 91,
+          "end": 154949999,
+          "error": null,
+          "expected": 91,
+          "http_status": 200,
+          "latency_ms": 1292.745,
+          "outcome": "ok",
+          "response_bytes": 100664,
+          "start": 154940000,
+          "success": true
+        }
+      ],
+      "source_nonce": 1646777,
+      "source_primary_outcome": "ok",
+      "source_primary_result_count": 0
+    },
+    {
+      "actual_bad_chunk": 4,
+      "all_repairs_succeeded": true,
+      "always_dual_cu": 960,
+      "bad_block": 154953593,
+      "boundary_calls": 5,
+      "boundary_records": [
+        {
+          "block": 154909999,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 947.748,
+          "nonce": 1646574,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154989999,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 954.024,
+          "nonce": 1647023,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154949999,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 929.368,
+          "nonce": 1646821,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154969999,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 962.882,
+          "nonce": 1646967,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154959999,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 1030.082,
+          "nonce": 1646914,
+          "outcome": "ok",
+          "response_bytes": 102
+        }
+      ],
+      "boundaryguard_cu": 670,
+      "canonical_counts": [
+        78,
+        37,
+        41,
+        91,
+        93,
+        53,
+        21,
+        35
+      ],
+      "chunks": [
+        {
+          "end": 154919999,
+          "start": 154910000
+        },
+        {
+          "end": 154929999,
+          "start": 154920000
+        },
+        {
+          "end": 154939999,
+          "start": 154930000
+        },
+        {
+          "end": 154949999,
+          "start": 154940000
+        },
+        {
+          "end": 154959999,
+          "start": 154950000
+        },
+        {
+          "end": 154969999,
+          "start": 154960000
+        },
+        {
+          "end": 154979999,
+          "start": 154970000
+        },
+        {
+          "end": 154989999,
+          "start": 154980000
+        }
+      ],
+      "correctly_localized": true,
+      "cu_saving_pct": 30.208333333333332,
+      "decisions": [
+        {
+          "end_block": 154989999,
+          "expected": 449,
+          "left_chunk": 0,
+          "mismatch": true,
+          "observed": 448,
+          "right_chunk_exclusive": 8,
+          "start_block": 154910000
+        },
+        {
+          "end_block": 154949999,
+          "expected": 247,
+          "left_chunk": 0,
+          "mismatch": false,
+          "observed": 247,
+          "right_chunk_exclusive": 4,
+          "start_block": 154910000
+        },
+        {
+          "end_block": 154989999,
+          "expected": 202,
+          "left_chunk": 4,
+          "mismatch": true,
+          "observed": 201,
+          "right_chunk_exclusive": 8,
+          "start_block": 154950000
+        },
+        {
+          "end_block": 154969999,
+          "expected": 146,
+          "left_chunk": 4,
+          "mismatch": true,
+          "observed": 145,
+          "right_chunk_exclusive": 6,
+          "start_block": 154950000
+        },
+        {
+          "end_block": 154959999,
+          "expected": 93,
+          "left_chunk": 4,
+          "mismatch": true,
+          "observed": 92,
+          "right_chunk_exclusive": 5,
+          "start_block": 154950000
+        },
+        {
+          "end_block": 154969999,
+          "expected": 53,
+          "left_chunk": 5,
+          "mismatch": false,
+          "observed": 53,
+          "right_chunk_exclusive": 6,
+          "start_block": 154960000
+        },
+        {
+          "end_block": 154989999,
+          "expected": 56,
+          "left_chunk": 6,
+          "mismatch": false,
+          "observed": 56,
+          "right_chunk_exclusive": 8,
+          "start_block": 154970000
+        }
+      ],
+      "located_chunks": [
+        4
+      ],
+      "omitted_dispatches": 1,
+      "primary_log_calls": 8,
+      "primary_observed_counts": [
+        78,
+        37,
+        41,
+        91,
+        92,
+        53,
+        21,
+        35
+      ],
+      "repair_log_calls": 1,
+      "repairs": [
+        {
+          "chunk_index": 4,
+          "count": 93,
+          "end": 154959999,
+          "error": null,
+          "expected": 93,
+          "http_status": 200,
+          "latency_ms": 1322.01,
+          "outcome": "ok",
+          "response_bytes": 104651,
+          "start": 154950000,
+          "success": true
+        }
+      ],
+      "source_nonce": 1646868,
+      "source_primary_outcome": "ok",
+      "source_primary_result_count": 0
+    },
+    {
+      "actual_bad_chunk": 4,
+      "all_repairs_succeeded": true,
+      "always_dual_cu": 960,
+      "bad_block": 154968052,
+      "boundary_calls": 5,
+      "boundary_records": [
+        {
+          "block": 154919999,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 987.969,
+          "nonce": 1646652,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154999999,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 625.747,
+          "nonce": 1647043,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154959999,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 961.381,
+          "nonce": 1646914,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154979999,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 947.259,
+          "nonce": 1646988,
+          "outcome": "ok",
+          "response_bytes": 102
+        },
+        {
+          "block": 154969999,
+          "error": null,
+          "http_status": 200,
+          "latency_ms": 974.564,
+          "nonce": 1646967,
+          "outcome": "ok",
+          "response_bytes": 102
+        }
+      ],
+      "boundaryguard_cu": 670,
+      "canonical_counts": [
+        37,
+        41,
+        91,
+        93,
+        53,
+        21,
+        35,
+        20
+      ],
+      "chunks": [
+        {
+          "end": 154929999,
+          "start": 154920000
+        },
+        {
+          "end": 154939999,
+          "start": 154930000
+        },
+        {
+          "end": 154949999,
+          "start": 154940000
+        },
+        {
+          "end": 154959999,
+          "start": 154950000
+        },
+        {
+          "end": 154969999,
+          "start": 154960000
+        },
+        {
+          "end": 154979999,
+          "start": 154970000
+        },
+        {
+          "end": 154989999,
+          "start": 154980000
+        },
+        {
+          "end": 154999999,
+          "start": 154990000
+        }
+      ],
+      "correctly_localized": true,
+      "cu_saving_pct": 30.208333333333332,
+      "decisions": [
+        {
+          "end_block": 154999999,
+          "expected": 391,
+          "left_chunk": 0,
+          "mismatch": true,
+          "observed": 390,
+          "right_chunk_exclusive": 8,
+          "start_block": 154920000
+        },
+        {
+          "end_block": 154959999,
+          "expected": 262,
+          "left_chunk": 0,
+          "mismatch": false,
+          "observed": 262,
+          "right_chunk_exclusive": 4,
+          "start_block": 154920000
+        },
+        {
+          "end_block": 154999999,
+          "expected": 129,
+          "left_chunk": 4,
+          "mismatch": true,
+          "observed": 128,
+          "right_chunk_exclusive": 8,
+          "start_block": 154960000
+        },
+        {
+          "end_block": 154979999,
+          "expected": 74,
+          "left_chunk": 4,
+          "mismatch": true,
+          "observed": 73,
+          "right_chunk_exclusive": 6,
+          "start_block": 154960000
+        },
+        {
+          "end_block": 154969999,
+          "expected": 53,
+          "left_chunk": 4,
+          "mismatch": true,
+          "observed": 52,
+          "right_chunk_exclusive": 5,
+          "start_block": 154960000
+        },
+        {
+          "end_block": 154979999,
+          "expected": 21,
+          "left_chunk": 5,
+          "mismatch": false,
+          "observed": 21,
+          "right_chunk_exclusive": 6,
+          "start_block": 154970000
+        },
+        {
+          "end_block": 154999999,
+          "expected": 55,
+          "left_chunk": 6,
+          "mismatch": false,
+          "observed": 55,
+          "right_chunk_exclusive": 8,
+          "start_block": 154980000
+        }
+      ],
+      "located_chunks": [
+        4
+      ],
+      "omitted_dispatches": 1,
+      "primary_log_calls": 8,
+      "primary_observed_counts": [
+        37,
+        41,
+        91,
+        93,
+        52,
+        21,
+        35,
+        20
+      ],
+      "repair_log_calls": 1,
+      "repairs": [
+        {
+          "chunk_index": 4,
+          "count": 53,
+          "end": 154969999,
+          "error": null,
+          "expected": 53,
+          "http_status": 200,
+          "latency_ms": 1005.519,
+          "outcome": "ok",
+          "response_bytes": 57675,
+          "start": 154960000,
+          "success": true
+        }
+      ],
+      "source_nonce": 1646958,
+      "source_primary_outcome": "ok",
+      "source_primary_result_count": 0
+    }
+  ],
+  "summary": {
+    "correctly_localized": 8,
+    "fault_scenarios": 8,
+    "median_fault_cu_saving_pct": 30.208333333333332,
+    "normal_cu_saving_pct": 44.583333333333336,
+    "normal_false_alarm": false,
+    "successfully_repaired": 8
+  }
+}

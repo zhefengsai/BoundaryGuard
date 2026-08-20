@@ -1,0 +1,26 @@
+{
+  "gate": "S2_excluded_attempts",
+  "total_attempts": 59,
+  "valid_trials": 50,
+  "excluded": 9,
+  "exclusion_rule": "Source Dispatch failed before the proxy path ran; BoundaryGuard was not exercised.",
+  "by_mode": {
+    "successful_empty": 5,
+    "truncate_last": 4
+  },
+  "by_error": {
+    "optimism_sepolia_unknown_block_code_26": 4,
+    "optimism_sepolia_sequencer_32603": 5
+  },
+  "cases": [
+    {"mode": "successful_empty", "idx": 2, "error": "Unknown block code 26"},
+    {"mode": "successful_empty", "idx": 6, "error": "Unknown block code 26"},
+    {"mode": "successful_empty", "idx": 7, "error": "sequencer -32603"},
+    {"mode": "successful_empty", "idx": 8, "error": "sequencer -32603"},
+    {"mode": "successful_empty", "idx": 9, "error": "sequencer -32603"},
+    {"mode": "truncate_last", "idx": 6, "error": "Unknown block code 26"},
+    {"mode": "truncate_last", "idx": 7, "error": "sequencer -32603"},
+    {"mode": "truncate_last", "idx": 0, "error": "Unknown block code 26"},
+    {"mode": "truncate_last", "idx": 1, "error": "sequencer -32603"}
+  ]
+}

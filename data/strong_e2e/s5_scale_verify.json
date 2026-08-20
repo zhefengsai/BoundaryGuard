@@ -1,0 +1,14 @@
+{
+  "alarms": 0,
+  "artifact": "data/boundaryguard_scale_four_chain_summary.json",
+  "batches": 1281,
+  "chains": 4,
+  "false_alarm_rate": 0.0,
+  "gate": "S5_item6_scale_verify",
+  "meets_1000_valid": true,
+  "meets_4_chains": true,
+  "observed_at": "2026-08-08T20:45:38.693634+00:00",
+  "pass": true,
+  "provenance": "live_natural_observation",
+  "valid_batches": 1141
+}

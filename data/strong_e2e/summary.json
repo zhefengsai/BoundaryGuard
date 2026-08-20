@@ -1,0 +1,40 @@
+{
+  "artifact": "data/strong_e2e/samples.jsonl",
+  "by_mode": {
+    "healthy": {
+      "n": 20,
+      "passed": 20
+    },
+    "omit_nth": {
+      "n": 10,
+      "passed": 10
+    },
+    "successful_empty": {
+      "n": 15,
+      "passed": 10
+    },
+    "truncate_last": {
+      "n": 14,
+      "passed": 10
+    }
+  },
+  "fault_min_met": true,
+  "fault_target_met": true,
+  "gate": "S2_strong_e2e",
+  "next": "S2 PASS; open S3 full fault matrix",
+  "note": "Fault modes used live proxy fault_injection; proxy_trace shows fault_injected+repaired. Invalid no-fault omit samples archived.",
+  "observed_at": "2026-08-08T19:33:14.781094+00:00",
+  "overall_pass": true,
+  "passed": 50,
+  "proxy_outcomes": {
+    "fault_injected": 33,
+    "repaired": 33
+  },
+  "strong_target_pass": true,
+  "targets": {
+    "healthy": 20,
+    "per_fault_class_min": 5,
+    "per_fault_class_target": 10
+  },
+  "total": 59
+}

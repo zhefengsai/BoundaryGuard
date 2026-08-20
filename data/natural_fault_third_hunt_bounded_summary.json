@@ -1,0 +1,25 @@
+{
+  "adopt_for_paper": false,
+  "artifact": "data/natural_fault_third_hunt_bounded.jsonl",
+  "failure_class_counts": {
+    "explicit:http_error": 20,
+    "explicit:rpc_error": 8,
+    "explicit:transport_error": 32,
+    "truncated_or_stale_nonempty": 28
+  },
+  "gate": "third_org_silent_hunt_bounded",
+  "known_silent_orgs": [
+    "1rpc",
+    "flashbots"
+  ],
+  "max_contexts": 20,
+  "max_providers_per_chain": 6,
+  "meets_three_silent_providers": false,
+  "new_orgs_beyond_1rpc_flashbots": [],
+  "note": "Non-blocking. If new_orgs empty, keep Gate-2 two-org limitation.",
+  "observed_at": "2026-08-09T20:04:52.737076+00:00",
+  "pass": true,
+  "provenance": "live_natural_observation",
+  "successful_empty_hits": 0,
+  "written": 88
+}

@@ -1,0 +1,305 @@
+{
+  "always_dual_first_two": {
+    "complete": 215,
+    "silent_incomplete": 173,
+    "unavailable": 60
+  },
+  "any_triple_majority_successful_empty_groups": 3,
+  "any_triple_majority_successful_empty_triples": 15,
+  "any_triple_successful_empty_sets": {
+    "1rpc,cloudflare,flashbots": 3,
+    "1rpc,drpc,flashbots": 3,
+    "1rpc,flashbots,llamarpc": 3,
+    "1rpc,flashbots,publicnode": 3,
+    "1rpc,flashbots,zeroxrpc": 3
+  },
+  "boundaryguard_on_first_provider": {
+    "accept_complete": 102,
+    "detect_incomplete": 183,
+    "unavailable_or_explicit": 163
+  },
+  "configured_quorum": {
+    "arbitrum": [
+      "1rpc",
+      "publicnode",
+      "drpc"
+    ],
+    "ethereum": [
+      "1rpc",
+      "publicnode",
+      "drpc"
+    ],
+    "optimism": [
+      "1rpc",
+      "official",
+      "drpc"
+    ],
+    "polygon": [
+      "1rpc",
+      "tenderly",
+      "drpc"
+    ]
+  },
+  "exclude_utc_dates": [
+    "2026-08-19"
+  ],
+  "gate": "quorum_trace_baseline",
+  "getLogs_groups_with_configured_3": 448,
+  "note": "Analytic replay of saved Gate-2 eth_getLogs replies. 2-of-3 uses the first three providers in the frozen schedule map. Agreement on a successful incomplete body is a silent miss; BoundaryGuard detects the same incomplete primary via the nonce interval. Not an official Hyperlane quorum-mode agent run. UTC dates in EXCLUDE_UTC_DATES are omitted from the replay.",
+  "observed_at": "2026-08-19T06:23:17.120723+00:00",
+  "provenance": "saved_natural_failure_analytic_replay",
+  "quorum_2of3": {
+    "accept_complete": 176,
+    "disagreement": 16,
+    "silent_incomplete": 133,
+    "unavailable": 123
+  },
+  "quorum_all_three_incomplete": 89,
+  "quorum_by_chain": {
+    "arbitrum": {
+      "accept_complete": 24,
+      "silent_incomplete": 25,
+      "unavailable": 63
+    },
+    "ethereum": {
+      "accept_complete": 32,
+      "disagreement": 5,
+      "silent_incomplete": 24,
+      "unavailable": 51
+    },
+    "optimism": {
+      "accept_complete": 56,
+      "disagreement": 11,
+      "silent_incomplete": 36,
+      "unavailable": 9
+    },
+    "polygon": {
+      "accept_complete": 64,
+      "silent_incomplete": 48
+    }
+  },
+  "quorum_majority_successful_empty": 0,
+  "quorum_silent_by_class": {
+    "truncated_or_stale_nonempty": 133
+  },
+  "rows_loaded": 3376,
+  "silent_incomplete_examples": [
+    {
+      "agreed_class": "truncated_or_stale_nonempty",
+      "block": 489918098,
+      "chain": "arbitrum",
+      "classes": [
+        "truncated_or_stale_nonempty",
+        "truncated_or_stale_nonempty",
+        "explicit:http_error"
+      ],
+      "epoch": 5,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 2482306,
+      "providers": [
+        "1rpc",
+        "publicnode",
+        "drpc"
+      ]
+    },
+    {
+      "agreed_class": "truncated_or_stale_nonempty",
+      "block": 489992681,
+      "chain": "arbitrum",
+      "classes": [
+        "truncated_or_stale_nonempty",
+        "truncated_or_stale_nonempty",
+        "explicit:http_error"
+      ],
+      "epoch": 5,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 2482417,
+      "providers": [
+        "1rpc",
+        "publicnode",
+        "drpc"
+      ]
+    },
+    {
+      "agreed_class": "truncated_or_stale_nonempty",
+      "block": 489992681,
+      "chain": "arbitrum",
+      "classes": [
+        "truncated_or_stale_nonempty",
+        "explicit:http_error",
+        "truncated_or_stale_nonempty"
+      ],
+      "epoch": 5,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 2482417,
+      "providers": [
+        "1rpc",
+        "publicnode",
+        "drpc"
+      ]
+    },
+    {
+      "agreed_class": "truncated_or_stale_nonempty",
+      "block": 490150293,
+      "chain": "arbitrum",
+      "classes": [
+        "truncated_or_stale_nonempty",
+        "truncated_or_stale_nonempty",
+        "explicit:http_error"
+      ],
+      "epoch": 5,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 2482639,
+      "providers": [
+        "1rpc",
+        "publicnode",
+        "drpc"
+      ]
+    },
+    {
+      "agreed_class": "truncated_or_stale_nonempty",
+      "block": 490222082,
+      "chain": "arbitrum",
+      "classes": [
+        "truncated_or_stale_nonempty",
+        "truncated_or_stale_nonempty",
+        "explicit:http_error"
+      ],
+      "epoch": 5,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 2482750,
+      "providers": [
+        "1rpc",
+        "publicnode",
+        "drpc"
+      ]
+    },
+    {
+      "agreed_class": "truncated_or_stale_nonempty",
+      "block": 490288160,
+      "chain": "arbitrum",
+      "classes": [
+        "truncated_or_stale_nonempty",
+        "truncated_or_stale_nonempty",
+        "explicit:http_error"
+      ],
+      "epoch": 5,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 2482861,
+      "providers": [
+        "1rpc",
+        "publicnode",
+        "drpc"
+      ]
+    },
+    {
+      "agreed_class": "truncated_or_stale_nonempty",
+      "block": 25656156,
+      "chain": "ethereum",
+      "classes": [
+        "truncated_or_stale_nonempty",
+        "truncated_or_stale_nonempty",
+        "explicit:http_error"
+      ],
+      "epoch": 5,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 249941,
+      "providers": [
+        "1rpc",
+        "publicnode",
+        "drpc"
+      ]
+    },
+    {
+      "agreed_class": "truncated_or_stale_nonempty",
+      "block": 25657798,
+      "chain": "ethereum",
+      "classes": [
+        "truncated_or_stale_nonempty",
+        "truncated_or_stale_nonempty",
+        "truncated_or_stale_nonempty"
+      ],
+      "epoch": 5,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 250052,
+      "providers": [
+        "1rpc",
+        "publicnode",
+        "drpc"
+      ]
+    },
+    {
+      "agreed_class": "truncated_or_stale_nonempty",
+      "block": 25659716,
+      "chain": "ethereum",
+      "classes": [
+        "explicit:rpc_error",
+        "truncated_or_stale_nonempty",
+        "truncated_or_stale_nonempty"
+      ],
+      "epoch": 5,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 250163,
+      "providers": [
+        "1rpc",
+        "publicnode",
+        "drpc"
+      ]
+    },
+    {
+      "agreed_class": "truncated_or_stale_nonempty",
+      "block": 25661139,
+      "chain": "ethereum",
+      "classes": [
+        "truncated_or_stale_nonempty",
+        "truncated_or_stale_nonempty",
+        "explicit:http_error"
+      ],
+      "epoch": 5,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 250274,
+      "providers": [
+        "1rpc",
+        "publicnode",
+        "drpc"
+      ]
+    },
+    {
+      "agreed_class": "truncated_or_stale_nonempty",
+      "block": 25662797,
+      "chain": "ethereum",
+      "classes": [
+        "truncated_or_stale_nonempty",
+        "truncated_or_stale_nonempty",
+        "truncated_or_stale_nonempty"
+      ],
+      "epoch": 5,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 250385,
+      "providers": [
+        "1rpc",
+        "publicnode",
+        "drpc"
+      ]
+    },
+    {
+      "agreed_class": "truncated_or_stale_nonempty",
+      "block": 25666256,
+      "chain": "ethereum",
+      "classes": [
+        "truncated_or_stale_nonempty",
+        "truncated_or_stale_nonempty",
+        "truncated_or_stale_nonempty"
+      ],
+      "epoch": 5,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 250607,
+      "providers": [
+        "1rpc",
+        "publicnode",
+        "drpc"
+      ]
+    }
+  ],
+  "source": "work/data/natural_fault_multiday.jsonl"
+}
