@@ -1,0 +1,35 @@
+{
+  "attempted": 28,
+  "natural_sources": {
+    "ethereum:1rpc:eth_getLogs:blockHash": 1,
+    "ethereum:flashbots:eth_getLogs:blockHash": 4,
+    "ethereum:flashbots:eth_getLogs:singleBlock": 4,
+    "optimism:1rpc:eth_getLogs:blockHash": 15,
+    "optimism:1rpc:eth_getLogs:singleBlock": 4
+  },
+  "percentiles_ms": {
+    "detect": {
+      "p50": 1888.123,
+      "p95": 5805.187,
+      "p99": 5942.985
+    },
+    "localize": {
+      "p50": 2858.111,
+      "p95": 12424.045,
+      "p99": 16344.921
+    },
+    "repair": {
+      "p50": 1194.755,
+      "p95": 2066.252,
+      "p99": 2140.314
+    },
+    "total": {
+      "p50": 5876.242,
+      "p95": 18538.191,
+      "p99": 22384.108
+    }
+  },
+  "provenance": "saved natural failure at real block; canonical surrounding trace; live boundary and repair",
+  "successful": 28,
+  "unavailable": 0
+}

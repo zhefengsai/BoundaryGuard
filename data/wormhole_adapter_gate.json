@@ -1,0 +1,145 @@
+{
+  "all_expected": true,
+  "cases": [
+    {
+      "complete_accept": true,
+      "emitter": "2/00000000000000000000000033bb3dc7d524f71dd14c8595b65a10cfe15f9820",
+      "expected_count": 8,
+      "interval": [
+        1731,
+        1739
+      ],
+      "omission_detected": true,
+      "repaired_exact_prefix": true
+    },
+    {
+      "complete_accept": true,
+      "emitter": "4/000000000000000000000000b6f6d86a8f9879a9c87f643768d9efc38c1da6e7",
+      "expected_count": 8,
+      "interval": [
+        807316,
+        807324
+      ],
+      "omission_detected": true,
+      "repaired_exact_prefix": true
+    },
+    {
+      "complete_accept": true,
+      "emitter": "1/8315814095c3ee003c10a905070b33f5a9ad18057cedf16e8192c8d3fc118ec8",
+      "expected_count": 8,
+      "interval": [
+        172528,
+        172536
+      ],
+      "omission_detected": true,
+      "repaired_exact_prefix": true
+    },
+    {
+      "complete_accept": true,
+      "emitter": "1/ffcec24e0f2cdeade143c339b81a2e8861c0bffcb7e46dfb705e28d6dff9d8cf",
+      "expected_count": 8,
+      "interval": [
+        17118,
+        17126
+      ],
+      "omission_detected": true,
+      "repaired_exact_prefix": true
+    },
+    {
+      "complete_accept": true,
+      "emitter": "1/1f132a5751eb59ef0f5568870c2fd40a6ae5abf59f187390beeae1ad2e834acc",
+      "expected_count": 8,
+      "interval": [
+        356,
+        364
+      ],
+      "omission_detected": true,
+      "repaired_exact_prefix": true
+    },
+    {
+      "complete_accept": true,
+      "emitter": "1/19671a08a9cef6f3a04314ed478fc332a4966f41ad3e6fea76933dede9c6cdfe",
+      "expected_count": 8,
+      "interval": [
+        20045,
+        20053
+      ],
+      "omission_detected": true,
+      "repaired_exact_prefix": true
+    },
+    {
+      "complete_accept": true,
+      "emitter": "50/00000000000000000000000062deeafee06c7442a21c93ededc79a0cb5791c83",
+      "expected_count": 8,
+      "interval": [
+        2973,
+        2981
+      ],
+      "omission_detected": true,
+      "repaired_exact_prefix": true
+    },
+    {
+      "complete_accept": true,
+      "emitter": "4/00000000000000000000000086206f8813a1a4201420d67b75c27cca0ff2a836",
+      "expected_count": 8,
+      "interval": [
+        985,
+        993
+      ],
+      "omission_detected": true,
+      "repaired_exact_prefix": true
+    },
+    {
+      "complete_accept": true,
+      "emitter": "1/4c0f6655f447821cda959c9fc48ba787909acf1a474ba68ffa6019aa485d4248",
+      "expected_count": 8,
+      "interval": [
+        5817,
+        5825
+      ],
+      "omission_detected": true,
+      "repaired_exact_prefix": true
+    },
+    {
+      "complete_accept": true,
+      "emitter": "21/89b91e68d0264956632bf11f8abd2243caa56c4a42c97d9b97eadc71bf1074bf",
+      "expected_count": 8,
+      "interval": [
+        168391,
+        168399
+      ],
+      "omission_detected": true,
+      "repaired_exact_prefix": true
+    },
+    {
+      "complete_accept": true,
+      "emitter": "5/000000000000000000000000d78d199f8c402e7b5cc2abe278df0412400a3bae",
+      "expected_count": 8,
+      "interval": [
+        3224,
+        3232
+      ],
+      "omission_detected": true,
+      "repaired_exact_prefix": true
+    },
+    {
+      "complete_accept": true,
+      "emitter": "6/000000000000000000000000875d6d37ec55c8cf220b9e5080717549d8aa8eca",
+      "expected_count": 8,
+      "interval": [
+        30110,
+        30118
+      ],
+      "omission_detected": true,
+      "repaired_exact_prefix": true
+    }
+  ],
+  "emitters_scanned": 144,
+  "operations_demonstrated": [
+    "expected_interval",
+    "mismatch_detection",
+    "repaired_exact_prefix"
+  ],
+  "protocol": "wormhole_emitter_sequence",
+  "provenance": "controlled_fault_injection"
+}

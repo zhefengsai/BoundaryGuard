@@ -1,0 +1,18 @@
+{
+  "gate1_false_alarm_upper_95": 0.004972177089234475,
+  "gate1_false_alarm_valid_batches": 601,
+  "gate1_false_alarms": 0,
+  "gate1_finality_all_expected": true,
+  "gate1_identity_all_expected": true,
+  "gate3_note": "offline relayer-workload simulation; not unmodified Hyperlane integration",
+  "gate3_proxy_sim_completion": 1.0,
+  "gate3_proxy_sim_cu_saving_vs_dual_pct": 4.285714285714286,
+  "gate4_matrix_correct": 660,
+  "gate4_matrix_scenarios": 660,
+  "gate4_mean_cu_saving_pct": 23.806029040404038,
+  "gate5_demotion_frac_n16": 0.85,
+  "gate5_mean_abs_model_error_pp": 9.145675505050509,
+  "gate5_sparse_saving_gate_20pct": true,
+  "gate7_wormhole_all_expected": true,
+  "gate7_wormhole_cases": 12
+}

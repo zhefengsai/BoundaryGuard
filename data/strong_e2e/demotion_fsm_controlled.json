@@ -1,0 +1,143 @@
+{
+  "demotions": 1,
+  "final_status": "healthy",
+  "gate": "demotion_fsm_controlled",
+  "note": "Synthetic provider-state machine with soft-omit before quarantine. Not a live multi-day ops evaluation.",
+  "observed_at": "2026-08-09T20:16:07.865297+00:00",
+  "pass": true,
+  "provenance": "controlled_fault_injection",
+  "required_path": [
+    "omit",
+    "quarantined",
+    "probation",
+    "healthy"
+  ],
+  "trace": [
+    {
+      "canary_ok": 0,
+      "cooldown_left": 0,
+      "demotions": 0,
+      "event": "observe_ok",
+      "omit_left": 0,
+      "status": "healthy"
+    },
+    {
+      "canary_ok": 0,
+      "cooldown_left": 0,
+      "demotions": 0,
+      "event": "enter_omit",
+      "omit_left": 3,
+      "status": "omit"
+    },
+    {
+      "canary_ok": 0,
+      "cooldown_left": 0,
+      "demotions": 0,
+      "event": "omit_tick",
+      "omit_left": 2,
+      "status": "omit"
+    },
+    {
+      "canary_ok": 0,
+      "cooldown_left": 0,
+      "demotions": 0,
+      "event": "omit_tick",
+      "omit_left": 1,
+      "status": "omit"
+    },
+    {
+      "canary_ok": 0,
+      "cooldown_left": 5,
+      "demotions": 1,
+      "event": "omit_to_quarantine",
+      "omit_left": 0,
+      "status": "quarantined"
+    },
+    {
+      "canary_ok": 0,
+      "cooldown_left": 4,
+      "demotions": 1,
+      "event": "quarantine_tick",
+      "omit_left": 0,
+      "status": "quarantined"
+    },
+    {
+      "canary_ok": 0,
+      "cooldown_left": 3,
+      "demotions": 1,
+      "event": "quarantine_tick",
+      "omit_left": 0,
+      "status": "quarantined"
+    },
+    {
+      "canary_ok": 0,
+      "cooldown_left": 2,
+      "demotions": 1,
+      "event": "quarantine_tick",
+      "omit_left": 0,
+      "status": "quarantined"
+    },
+    {
+      "canary_ok": 0,
+      "cooldown_left": 1,
+      "demotions": 1,
+      "event": "quarantine_tick",
+      "omit_left": 0,
+      "status": "quarantined"
+    },
+    {
+      "canary_ok": 0,
+      "cooldown_left": 0,
+      "demotions": 1,
+      "event": "quarantine_tick",
+      "omit_left": 0,
+      "status": "quarantined"
+    },
+    {
+      "canary_ok": 0,
+      "cooldown_left": 0,
+      "demotions": 1,
+      "event": "enter_probation",
+      "omit_left": 0,
+      "status": "probation"
+    },
+    {
+      "canary_ok": 1,
+      "cooldown_left": 0,
+      "demotions": 1,
+      "event": "probation_canary_ok",
+      "omit_left": 0,
+      "status": "probation"
+    },
+    {
+      "canary_ok": 2,
+      "cooldown_left": 0,
+      "demotions": 1,
+      "event": "probation_canary_ok",
+      "omit_left": 0,
+      "status": "probation"
+    },
+    {
+      "canary_ok": 3,
+      "cooldown_left": 0,
+      "demotions": 1,
+      "event": "probation_canary_ok",
+      "omit_left": 0,
+      "status": "probation"
+    },
+    {
+      "canary_ok": 3,
+      "cooldown_left": 0,
+      "demotions": 1,
+      "event": "recovered_healthy",
+      "omit_left": 0,
+      "status": "healthy"
+    }
+  ],
+  "transition_path_seen": [
+    "omit",
+    "quarantined",
+    "probation",
+    "healthy"
+  ]
+}

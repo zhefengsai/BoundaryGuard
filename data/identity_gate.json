@@ -1,0 +1,109 @@
+{
+  "all_expected": true,
+  "byzantine_inclusion_note": {
+    "same_nonce_fabrication_requires_inclusion_mode": true,
+    "structural_id_rejects_payload_mismatch": true
+  },
+  "cases": {
+    "clean": {
+      "duplicates": [],
+      "invalid_hashes": [],
+      "missing": [],
+      "order_independent": true,
+      "unexpected": [],
+      "valid": true
+    },
+    "duplicate": {
+      "duplicates": [
+        1646144
+      ],
+      "invalid_hashes": [],
+      "missing": [],
+      "order_independent": true,
+      "unexpected": [],
+      "valid": false
+    },
+    "foreign": {
+      "duplicates": [],
+      "invalid_hashes": [],
+      "missing": [],
+      "order_independent": true,
+      "unexpected": [
+        4294967295
+      ],
+      "valid": false
+    },
+    "malformed": {
+      "duplicates": [],
+      "invalid_hashes": [
+        1646143
+      ],
+      "missing": [],
+      "order_independent": true,
+      "unexpected": [],
+      "valid": false
+    },
+    "omission": {
+      "duplicates": [],
+      "invalid_hashes": [],
+      "missing": [
+        1646146
+      ],
+      "order_independent": true,
+      "unexpected": [],
+      "valid": false
+    },
+    "reordered": {
+      "duplicates": [],
+      "invalid_hashes": [],
+      "missing": [],
+      "order_independent": true,
+      "unexpected": [],
+      "valid": true
+    },
+    "same_count_cross_chunk": {
+      "duplicates": [],
+      "invalid_hashes": [],
+      "missing": [
+        1646145
+      ],
+      "order_independent": true,
+      "unexpected": [
+        1646256
+      ],
+      "valid": false
+    },
+    "same_nonce_fabrication": {
+      "duplicates": [],
+      "invalid_hashes": [
+        1646142
+      ],
+      "missing": [],
+      "order_independent": true,
+      "unexpected": [],
+      "valid": false
+    },
+    "substitution": {
+      "duplicates": [],
+      "invalid_hashes": [
+        1646148
+      ],
+      "missing": [],
+      "order_independent": true,
+      "unexpected": [],
+      "valid": false
+    }
+  },
+  "expected_validity": {
+    "clean": true,
+    "duplicate": false,
+    "foreign": false,
+    "malformed": false,
+    "omission": false,
+    "reordered": true,
+    "same_count_cross_chunk": false,
+    "same_nonce_fabrication": false,
+    "substitution": false
+  },
+  "provenance": "controlled_integrity_mutation"
+}

@@ -1,0 +1,25 @@
+{
+  "detail_files": [
+    "data/strong_e2e/s5_scale_verify.json",
+    "data/strong_e2e/s5_demotion_cost.json",
+    "data/strong_e2e/s5_natural_fault.json"
+  ],
+  "gate": "S5_reinforce",
+  "next": "S5 PASS; proceed to S6 analysis/narrative when ready",
+  "observed_at": "2026-08-08T20:45:38.824075+00:00",
+  "overall_pass": true,
+  "parts": [
+    {
+      "gate": "S5_item6_scale_verify",
+      "pass": true
+    },
+    {
+      "gate": "S5_item4_demotion_cost",
+      "pass": true
+    },
+    {
+      "gate": "S5_item5_natural_fault",
+      "pass": true
+    }
+  ]
+}

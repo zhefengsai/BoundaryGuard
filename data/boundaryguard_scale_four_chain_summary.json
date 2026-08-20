@@ -1,0 +1,195 @@
+{
+  "chains": {
+    "arbitrum": {
+      "alarms": 0,
+      "batches": 363,
+      "boundary": "blast",
+      "density_by_catalog": {
+        "high": {
+          "alarms": 0,
+          "valid": 8
+        },
+        "low": {
+          "alarms": 0,
+          "valid": 199
+        },
+        "medium": {
+          "alarms": 0,
+          "valid": 63
+        }
+      },
+      "density_by_expected": {
+        "empty": {
+          "alarms": 0,
+          "valid": 199
+        },
+        "high": {
+          "alarms": 0,
+          "valid": 2
+        },
+        "low": {
+          "alarms": 0,
+          "valid": 63
+        },
+        "medium": {
+          "alarms": 0,
+          "valid": 6
+        }
+      },
+      "false_alarm_rate": 0.0,
+      "nonempty_alarms": 0,
+      "nonempty_false_alarm_rate": 0.0,
+      "primary": "official",
+      "repair": "nodies",
+      "valid_batches": 270,
+      "valid_nonempty_batches": 71
+    },
+    "ethereum": {
+      "alarms": 0,
+      "batches": 313,
+      "boundary": "drpc",
+      "density_by_catalog": {
+        "high": {
+          "alarms": 0,
+          "valid": 36
+        },
+        "low": {
+          "alarms": 0,
+          "valid": 234
+        },
+        "medium": {
+          "alarms": 0,
+          "valid": 0
+        }
+      },
+      "density_by_expected": {
+        "empty": {
+          "alarms": 0,
+          "valid": 0
+        },
+        "high": {
+          "alarms": 0,
+          "valid": 264
+        },
+        "low": {
+          "alarms": 0,
+          "valid": 0
+        },
+        "medium": {
+          "alarms": 0,
+          "valid": 6
+        }
+      },
+      "false_alarm_rate": 0.0,
+      "nonempty_alarms": 0,
+      "nonempty_false_alarm_rate": 0.0,
+      "primary": "zeroxrpc",
+      "repair": "llamarpc",
+      "valid_batches": 270,
+      "valid_nonempty_batches": 270
+    },
+    "optimism": {
+      "alarms": 0,
+      "batches": 302,
+      "boundary": "drpc",
+      "density_by_catalog": {
+        "high": {
+          "alarms": 0,
+          "valid": 78
+        },
+        "low": {
+          "alarms": 0,
+          "valid": 158
+        },
+        "medium": {
+          "alarms": 0,
+          "valid": 62
+        }
+      },
+      "density_by_expected": {
+        "empty": {
+          "alarms": 0,
+          "valid": 158
+        },
+        "high": {
+          "alarms": 0,
+          "valid": 28
+        },
+        "low": {
+          "alarms": 0,
+          "valid": 62
+        },
+        "medium": {
+          "alarms": 0,
+          "valid": 50
+        }
+      },
+      "false_alarm_rate": 0.0,
+      "nonempty_alarms": 0,
+      "nonempty_false_alarm_rate": 0.0,
+      "primary": "official",
+      "repair": "nodies",
+      "valid_batches": 298,
+      "valid_nonempty_batches": 140
+    },
+    "polygon": {
+      "alarms": 0,
+      "batches": 303,
+      "boundary": "drpc",
+      "density_by_catalog": {
+        "high": {
+          "alarms": 0,
+          "valid": 31
+        },
+        "low": {
+          "alarms": 0,
+          "valid": 194
+        },
+        "medium": {
+          "alarms": 0,
+          "valid": 78
+        }
+      },
+      "density_by_expected": {
+        "empty": {
+          "alarms": 0,
+          "valid": 194
+        },
+        "high": {
+          "alarms": 0,
+          "valid": 0
+        },
+        "low": {
+          "alarms": 0,
+          "valid": 78
+        },
+        "medium": {
+          "alarms": 0,
+          "valid": 31
+        }
+      },
+      "false_alarm_rate": 0.0,
+      "nonempty_alarms": 0,
+      "nonempty_false_alarm_rate": 0.0,
+      "primary": "tenderly",
+      "repair": "quicknode",
+      "valid_batches": 303,
+      "valid_nonempty_batches": 109
+    }
+  },
+  "overall": {
+    "alarms": 0,
+    "batches": 1281,
+    "chains": 4,
+    "false_alarm_rate": 0.0,
+    "meets_1000_valid": true,
+    "meets_4_chains": true,
+    "nonempty_alarms": 0,
+    "nonempty_false_alarm_rate": 0.0,
+    "nonempty_zero_alarm_exact_one_sided_95pct_upper": 0.005064643552005976,
+    "target_valid_per_chain": 250,
+    "valid_batches": 1141,
+    "valid_nonempty_batches": 590,
+    "zero_alarm_exact_one_sided_95pct_upper": 0.0026220885339924838
+  }
+}

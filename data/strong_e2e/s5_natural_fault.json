@@ -1,0 +1,20 @@
+{
+  "artifact": "data/natural_fault_multiday_summary.json",
+  "calendar_days": [
+    "2026-08-03",
+    "2026-08-04",
+    "2026-08-05",
+    "2026-08-06"
+  ],
+  "gate": "S5_item5_natural_fault",
+  "meets_three_silent_providers": false,
+  "note": "Third successful-empty org optional; stop-rule allows freeze with 2 orgs + second class.",
+  "observed_at": "2026-08-08T20:45:38.795413+00:00",
+  "pass": true,
+  "provenance": "live_natural_observation",
+  "ran_epoch": false,
+  "records": 2416,
+  "second_failure_class_observed": true,
+  "silent_empty_provider_count": 2,
+  "used_existing_freeze": true
+}

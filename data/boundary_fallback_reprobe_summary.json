@@ -1,0 +1,17 @@
+{
+  "alarms_among_recovered": 0,
+  "design_note": "Archive-capable multi-URL boundary fallback recovers a subset of Gate-1 unavailable batches; remaining unavailability is still preferable to silent incompleteness for correctness-critical clients.",
+  "implied_paper_unavailable_if_fallback": 0,
+  "implied_unavailable_rate_if_fallback": 0.0,
+  "original_unavailable": 140,
+  "recovered_by_chain": {
+    "arbitrum": 93,
+    "ethereum": 43,
+    "optimism": 4
+  },
+  "recovered_with_boundary_fallback": 140,
+  "recovery_rate": 1.0,
+  "reprobed": 140,
+  "still_by_chain": {},
+  "still_unavailable": 0
+}

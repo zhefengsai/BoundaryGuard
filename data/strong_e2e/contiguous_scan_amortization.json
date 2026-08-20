@@ -1,0 +1,102 @@
+{
+  "boundary_call_saving_pct": 41.666666666666664,
+  "chain": "optimism",
+  "cold_clear_each_window": {
+    "boundary_calls": 24,
+    "clear_each": true,
+    "completed": 12,
+    "cu_est": 1344,
+    "elapsed_s": 8.372410297393799,
+    "fail_closed_or_error": 0,
+    "proxy_delta": {
+      "accepted": 12,
+      "audited": 12,
+      "boundary_calls": 24,
+      "repair_calls": 0,
+      "repaired": 0,
+      "requests": 12,
+      "response_bytes": 30580,
+      "unavailable": 0
+    },
+    "windows": 12
+  },
+  "cu_saving_pct": 19.345238095238095,
+  "gate": "contiguous_scan_amortization",
+  "mailbox": "0xd4c1905bb1d26bc93dac913e13cacc278cdcc80d",
+  "note": "Sliding windows share endpoints; warm path reuses BoundaryCache.",
+  "observed_at": "2026-08-09T20:04:48.986991+00:00",
+  "pass": true,
+  "provenance": "live_public_rpc_observation",
+  "spans": [
+    {
+      "end": 154919219,
+      "start": 154918720
+    },
+    {
+      "end": 154919469,
+      "start": 154918970
+    },
+    {
+      "end": 154919719,
+      "start": 154919220
+    },
+    {
+      "end": 154919969,
+      "start": 154919470
+    },
+    {
+      "end": 154920219,
+      "start": 154919720
+    },
+    {
+      "end": 154920469,
+      "start": 154919970
+    },
+    {
+      "end": 154920719,
+      "start": 154920220
+    },
+    {
+      "end": 154920969,
+      "start": 154920470
+    },
+    {
+      "end": 154921219,
+      "start": 154920720
+    },
+    {
+      "end": 154921469,
+      "start": 154920970
+    },
+    {
+      "end": 154921719,
+      "start": 154921220
+    },
+    {
+      "end": 154921969,
+      "start": 154921470
+    }
+  ],
+  "step": 250,
+  "warm_retain_cache": {
+    "boundary_calls": 14,
+    "clear_each": false,
+    "completed": 12,
+    "cu_est": 1084,
+    "elapsed_s": 2.196613073348999,
+    "fail_closed_or_error": 0,
+    "proxy_delta": {
+      "accepted": 12,
+      "audited": 12,
+      "boundary_calls": 14,
+      "repair_calls": 0,
+      "repaired": 0,
+      "requests": 12,
+      "response_bytes": 29560,
+      "unavailable": 0
+    },
+    "windows": 12
+  },
+  "width": 500,
+  "windows": 12
+}

@@ -1,0 +1,107 @@
+{
+  "boundaryguard_completion": 0.965,
+  "boundaryguard_fail_closed": 7,
+  "boundaryguard_prefix_complete_of_auditable": 1.0,
+  "byte_saving_vs_dual_pct": 51.36026974136046,
+  "cu_or_request_saving_vs_dual_pct": 50.0,
+  "denominator_reanalysis": "relayer_proxy_denominators.json",
+  "interface": "unmodified JSON-RPC eth_getLogs (Hyperlane-relayer-compatible)",
+  "messages": 200,
+  "modes": {
+    "always_dual": {
+      "auditable": 187,
+      "bytes": 1431297,
+      "completed": 200,
+      "completion_rate": 1.0,
+      "count_mismatch_of_auditable": 0,
+      "expected_known": 187,
+      "fail_closed": 0,
+      "legacy_prefix_complete_of_issued": 0.935,
+      "n": 200,
+      "overhead_ms": {
+        "p50": 2015.0949954986572,
+        "p95": 2116.334915161133,
+        "p99": 2193.5229301452637
+      },
+      "prefix_complete_of_auditable": 1.0,
+      "prefix_complete_rate": 1.0,
+      "requests": 400
+    },
+    "boundaryguard": {
+      "auditable": 175,
+      "bytes": 696179,
+      "completed": 193,
+      "completion_rate": 0.965,
+      "count_mismatch_of_auditable": 0,
+      "expected_known": 177,
+      "fail_closed": 7,
+      "legacy_prefix_complete_of_issued": 0.875,
+      "n": 200,
+      "overhead_ms": {
+        "p50": 2988.3859157562256,
+        "p95": 4148.077726364136,
+        "p99": 4761.326789855957
+      },
+      "prefix_complete_of_auditable": 1.0,
+      "prefix_complete_rate": 1.0,
+      "requests": 200
+    },
+    "error_fallback": {
+      "auditable": 174,
+      "bytes": 720270,
+      "completed": 200,
+      "completion_rate": 1.0,
+      "count_mismatch_of_auditable": 0,
+      "expected_known": 174,
+      "fail_closed": 0,
+      "legacy_prefix_complete_of_issued": 0.87,
+      "n": 200,
+      "overhead_ms": {
+        "p50": 1058.2189559936523,
+        "p95": 1104.7310829162598,
+        "p99": 1312.577724456787
+      },
+      "prefix_complete_of_auditable": 1.0,
+      "prefix_complete_rate": 1.0,
+      "requests": 200
+    },
+    "unchecked": {
+      "auditable": 178,
+      "bytes": 720270,
+      "completed": 200,
+      "completion_rate": 1.0,
+      "count_mismatch_of_auditable": 0,
+      "expected_known": 178,
+      "fail_closed": 0,
+      "legacy_prefix_complete_of_issued": 0.89,
+      "n": 200,
+      "overhead_ms": {
+        "p50": 1060.0812435150146,
+        "p95": 1121.09375,
+        "p99": 1294.4560050964355
+      },
+      "prefix_complete_of_auditable": 1.0,
+      "prefix_complete_rate": 1.0,
+      "requests": 200
+    }
+  },
+  "note": "Destination delivery timestamps are from the frozen Hyperlane delivery trace; proxy path is live. Denominators: completion = non-empty release; fail-closed = not completed; auditable = completed with known evaluation nonce delta; prefix_complete_rate is of auditable only.",
+  "paired_auditable_messages": 128,
+  "paired_prefix_complete_rate": {
+    "always_dual": 1.0,
+    "boundaryguard": 1.0,
+    "error_fallback": 1.0,
+    "unchecked": 1.0
+  },
+  "provenance": "live_natural_observation",
+  "proxy_stats": {
+    "accepted": 193,
+    "audited": 200,
+    "boundary_calls": 360,
+    "repair_calls": 0,
+    "repaired": 0,
+    "requests": 200,
+    "response_bytes": 750298,
+    "unavailable": 7
+  }
+}

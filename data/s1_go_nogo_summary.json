@@ -1,0 +1,42 @@
+{
+  "checks": [
+    {
+      "eth_getLogs_seen": 75,
+      "inferred_audited_getLogs": 75,
+      "name": "A_eth_getLogs_via_official_agent",
+      "note": "Official agent Dispatch eth_getLogs audited by proxy (180s run 2026-08-08).",
+      "pass": true,
+      "proxy_accepts": 75,
+      "proxy_methods": {
+        "eth_getLogs": 75
+      },
+      "ran_seconds": 180
+    },
+    {
+      "address": "0x2e70781E2d3AD0fC6C79741064047F75b6B666fe",
+      "blocked": false,
+      "delivered": true,
+      "dispatch_tx": "0xba254503232636186e1af5c72d1a128e83151839f0bff9609298ec00ba66e452",
+      "explorer_dispatch": "https://sepolia-optimism.etherscan.io/tx/0xba254503232636186e1af5c72d1a128e83151839f0bff9609298ec00ba66e452",
+      "explorer_process": "https://sepolia.etherscan.io/tx/0x1754161df31b5931a54aad89e3cc85f090bd826de321f89cb68c29708847effa",
+      "ism": "0x331e6ccAaFd8e42c259C430750DcAE301EA49A98",
+      "ism_is_always": false,
+      "ism_module_type": 5,
+      "message_id": "0xef261ae2c6ac6f9dd763bb02d4b4430945749a04983141e6c0ab19b75580561d",
+      "name": "B_non_always_ism_official_delivery",
+      "note": "MessageIdMultisigISM 1-of-1 self-validator; process by our official relayer signer",
+      "our_delivery": true,
+      "pass": true,
+      "path": "self_messageid_multisig_ism_1of1",
+      "process_from": "0x2e70781E2d3AD0fC6C79741064047F75b6B666fe",
+      "process_tx": "0x1754161df31b5931a54aad89e3cc85f090bd826de321f89cb68c29708847effa",
+      "reason": "PASS: Mailbox.delivered and ProcessId tx from our official signer under MessageIdMultisigISM (moduleType=5).",
+      "recipient": "0xd8eadae8606571724e8a0af7435888f3c7a383ff"
+    }
+  ],
+  "gate": "S1_go_nogo",
+  "next": "S2 sample matrix allowed",
+  "observed_at": "2026-08-08T17:22:47.846236+00:00",
+  "overall_pass": true,
+  "wall_clock_note": "A: ~3 min; B: self MultisigISM validator+relayer unpaid dispatch then our process."
+}

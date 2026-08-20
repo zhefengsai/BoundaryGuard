@@ -1,0 +1,138 @@
+{
+  "accelerate_without_lying": [
+    "Printed Gate-2 freeze is already fixed in natural_fault_gate2_submit_freeze.json.",
+    "Re-running this inventory does not change the printed freeze.",
+    "Collector dump natural_fault_gate2_summary.json may include excluded UTC dates."
+  ],
+  "all_live_artifact_utc_days": [
+    "2026-08-02",
+    "2026-08-03",
+    "2026-08-04",
+    "2026-08-05",
+    "2026-08-06",
+    "2026-08-18",
+    "2026-08-19"
+  ],
+  "gate2_schedule_utc_days": [
+    "2026-08-03",
+    "2026-08-04",
+    "2026-08-05",
+    "2026-08-06",
+    "2026-08-18",
+    "2026-08-19"
+  ],
+  "provenance_rule": "Saved responses must not be re-labeled as new calendar days. Only live observation timestamps count toward Gate-2 multi-day.",
+  "shortcut_verdict": "Multiday schedule traces span 6 UTC day(s): ['2026-08-03', '2026-08-04', '2026-08-05', '2026-08-06', '2026-08-18', '2026-08-19']. Printed freeze is natural_fault_gate2_submit_freeze.json (4,416 records; five days 2026-08-03/04/05/06/18; UTC 2026-08-19 omitted). Do not treat natural_fault_gate2_summary.json (includes 2026-08-19) as the printed corpus. Saved responses must not be re-labeled as new calendar days.",
+  "studies": [
+    {
+      "path": "data/natural_fault_multiday.jsonl",
+      "rows": 3856,
+      "silent_by_day": {
+        "2026-08-03": 12,
+        "2026-08-04": 14,
+        "2026-08-05": 10,
+        "2026-08-06": 34,
+        "2026-08-18": 55,
+        "2026-08-19": 25
+      },
+      "silent_by_provider": {
+        "1rpc": 88,
+        "flashbots": 62
+      },
+      "silent_empty_events": 150,
+      "utc_days": {
+        "2026-08-03": 976,
+        "2026-08-04": 480,
+        "2026-08-05": 480,
+        "2026-08-06": 480,
+        "2026-08-18": 960,
+        "2026-08-19": 480
+      }
+    },
+    {
+      "path": "data/natural_fault_expansion.jsonl",
+      "rows": 534,
+      "silent_by_day": {
+        "2026-08-03": 20
+      },
+      "silent_by_provider": {
+        "1rpc": 12,
+        "flashbots": 8
+      },
+      "silent_empty_events": 20,
+      "utc_days": {
+        "2026-08-03": 534
+      }
+    },
+    {
+      "path": "data/natural_fault_targeted.jsonl",
+      "rows": 506,
+      "silent_by_day": {},
+      "silent_by_provider": {},
+      "silent_empty_events": 0,
+      "utc_days": {
+        "2026-08-03": 184,
+        "2026-08-05": 322
+      }
+    },
+    {
+      "path": "data/rpc_probe.jsonl",
+      "rows": 250,
+      "silent_by_day": {},
+      "silent_by_provider": {},
+      "silent_empty_events": 0,
+      "utc_days": {
+        "2026-08-02": 250
+      }
+    },
+    {
+      "path": "data/density_action_gate.jsonl",
+      "rows": 144,
+      "silent_by_day": {},
+      "silent_by_provider": {},
+      "silent_empty_events": 0,
+      "utc_days": {
+        "2026-08-02": 144
+      }
+    },
+    {
+      "path": "data/hyperlane_ground_truth_audit.jsonl",
+      "rows": 120,
+      "silent_by_day": {},
+      "silent_by_provider": {
+        "1rpc": 3
+      },
+      "silent_empty_events": 3,
+      "utc_days": {}
+    },
+    {
+      "path": "data/hyperlane_ground_truth_audit_10.jsonl",
+      "rows": 240,
+      "silent_by_day": {},
+      "silent_by_provider": {
+        "1rpc": 8
+      },
+      "silent_empty_events": 8,
+      "utc_days": {}
+    },
+    {
+      "path": "data/provider_frontier_multiday_probe.jsonl",
+      "rows": 1152,
+      "silent_by_day": {
+        "2026-08-03": 10,
+        "2026-08-04": 37,
+        "2026-08-06": 81
+      },
+      "silent_by_provider": {
+        "1rpc": 80,
+        "flashbots": 48
+      },
+      "silent_empty_events": 128,
+      "utc_days": {
+        "2026-08-03": 576,
+        "2026-08-04": 288,
+        "2026-08-06": 288
+      }
+    }
+  ]
+}

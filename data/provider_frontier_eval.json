@@ -1,0 +1,155 @@
+{
+  "methods": {
+    "blockHash": {
+      "binary_probe_blocks": [
+        25662296,
+        25666214,
+        25664163,
+        25662985,
+        25663550
+      ],
+      "binary_probe_count": 5,
+      "cutoff_block": 25663550,
+      "flashbots_profile": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "frontier_latency_reduction_vs_reliable_static_pct": 8.603140164121271,
+      "metrics": {
+        "static_flashbots": {
+          "delivered": 13,
+          "delivery_rate": 0.40625,
+          "mean_success_latency_ms": 1090.218076923077,
+          "p95_success_latency_ms": 1132.797,
+          "queries": 32,
+          "sla_1300ms_rate": 0.40625
+        },
+        "static_zeroxrpc": {
+          "delivered": 32,
+          "delivery_rate": 1.0,
+          "mean_success_latency_ms": 1377.08765625,
+          "p95_success_latency_ms": 1419.596,
+          "queries": 32,
+          "sla_1300ms_rate": 0.03125
+        },
+        "verified_frontier": {
+          "delivered": 32,
+          "delivery_rate": 1.0,
+          "mean_success_latency_ms": 1258.614875,
+          "p95_success_latency_ms": 1418.881,
+          "queries": 32,
+          "sla_1300ms_rate": 0.4375
+        }
+      },
+      "monotone_frontier": true,
+      "profile_transitions": 1,
+      "samples": 32
+    },
+    "singleBlock": {
+      "binary_probe_blocks": [
+        25662296,
+        25666214,
+        25664163,
+        25662985,
+        25663550
+      ],
+      "binary_probe_count": 5,
+      "cutoff_block": 25663550,
+      "flashbots_profile": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "frontier_latency_reduction_vs_reliable_static_pct": 8.765759079065,
+      "metrics": {
+        "static_flashbots": {
+          "delivered": 13,
+          "delivery_rate": 0.40625,
+          "mean_success_latency_ms": 1092.8441538461539,
+          "p95_success_latency_ms": 1201.486,
+          "queries": 32,
+          "sla_1300ms_rate": 0.40625
+        },
+        "static_zeroxrpc": {
+          "delivered": 32,
+          "delivery_rate": 1.0,
+          "mean_success_latency_ms": 1387.42690625,
+          "p95_success_latency_ms": 1431.323,
+          "queries": 32,
+          "sla_1300ms_rate": 0.0
+        },
+        "verified_frontier": {
+          "delivered": 32,
+          "delivery_rate": 1.0,
+          "mean_success_latency_ms": 1265.80840625,
+          "p95_success_latency_ms": 1431.113,
+          "queries": 32,
+          "sla_1300ms_rate": 0.40625
+        }
+      },
+      "monotone_frontier": true,
+      "profile_transitions": 1,
+      "samples": 32
+    }
+  },
+  "provenance": "live natural RPC responses; routing evaluation is offline replay"
+}

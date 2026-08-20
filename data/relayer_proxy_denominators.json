@@ -1,0 +1,101 @@
+{
+  "finding": {
+    "boundaryguard_fail_closed": 7,
+    "byte_saving_vs_dual_pct": 51.36026974136046,
+    "count_mismatches_in_window": {
+      "always_dual": 0,
+      "boundaryguard": 0,
+      "error_fallback": 0,
+      "unchecked": 0
+    },
+    "note": "In this Optimism window, every auditable completed response matched the evaluation nonce delta; the prior 87.5%/89% issued rates were dominated by expected=None, not silent omissions.",
+    "request_saving_vs_dual_pct": 50.0
+  },
+  "modes": {
+    "always_dual": {
+      "auditable": 187,
+      "bytes": 1431297,
+      "completed": 200,
+      "completion_rate": 1.0,
+      "count_mismatch_of_auditable": 0,
+      "expected_known": 187,
+      "fail_closed": 0,
+      "legacy_prefix_complete_of_issued": 0.935,
+      "n": 200,
+      "overhead_ms": {
+        "p50": 2015.0949954986572,
+        "p95": 2116.334915161133,
+        "p99": 2193.5229301452637
+      },
+      "prefix_complete_of_auditable": 1.0,
+      "prefix_complete_rate": 1.0,
+      "requests": 400
+    },
+    "boundaryguard": {
+      "auditable": 175,
+      "bytes": 696179,
+      "completed": 193,
+      "completion_rate": 0.965,
+      "count_mismatch_of_auditable": 0,
+      "expected_known": 177,
+      "fail_closed": 7,
+      "legacy_prefix_complete_of_issued": 0.875,
+      "n": 200,
+      "overhead_ms": {
+        "p50": 2988.3859157562256,
+        "p95": 4148.077726364136,
+        "p99": 4761.326789855957
+      },
+      "prefix_complete_of_auditable": 1.0,
+      "prefix_complete_rate": 1.0,
+      "requests": 200
+    },
+    "error_fallback": {
+      "auditable": 174,
+      "bytes": 720270,
+      "completed": 200,
+      "completion_rate": 1.0,
+      "count_mismatch_of_auditable": 0,
+      "expected_known": 174,
+      "fail_closed": 0,
+      "legacy_prefix_complete_of_issued": 0.87,
+      "n": 200,
+      "overhead_ms": {
+        "p50": 1058.2189559936523,
+        "p95": 1104.7310829162598,
+        "p99": 1312.577724456787
+      },
+      "prefix_complete_of_auditable": 1.0,
+      "prefix_complete_rate": 1.0,
+      "requests": 200
+    },
+    "unchecked": {
+      "auditable": 178,
+      "bytes": 720270,
+      "completed": 200,
+      "completion_rate": 1.0,
+      "count_mismatch_of_auditable": 0,
+      "expected_known": 178,
+      "fail_closed": 0,
+      "legacy_prefix_complete_of_issued": 0.89,
+      "n": 200,
+      "overhead_ms": {
+        "p50": 1060.0812435150146,
+        "p95": 1121.09375,
+        "p99": 1294.4560050964355
+      },
+      "prefix_complete_of_auditable": 1.0,
+      "prefix_complete_rate": 1.0,
+      "requests": 200
+    }
+  },
+  "paired_auditable_messages": 128,
+  "paired_prefix_complete_rate": {
+    "always_dual": 1.0,
+    "boundaryguard": 1.0,
+    "error_fallback": 1.0,
+    "unchecked": 1.0
+  },
+  "provenance": "live_natural_observation",
+  "reanalysis": "prefix_complete requires expected!=None; legacy issued rates mixed evaluation-oracle misses with retrieval omissions"
+}

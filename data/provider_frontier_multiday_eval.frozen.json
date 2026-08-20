@@ -1,0 +1,462 @@
+{
+  "all_epochs_observed": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "baselines": {
+    "ethereum:blockHash": {
+      "frontiers": {
+        "flashbots": null,
+        "publicnode": 25654921,
+        "zeroxrpc": 25654921
+      },
+      "latency_provider": "flashbots",
+      "policies": {
+        "latency_static": {
+          "delivery_rate": 0.041666666666666664,
+          "mean_success_latency_ms": 1060.377,
+          "n": 24,
+          "p95_success_latency_ms": 1060.377,
+          "sla": {
+            "1000": 0.0,
+            "1300": 0.041666666666666664,
+            "1600": 0.041666666666666664,
+            "2000": 0.041666666666666664,
+            "800": 0.0
+          }
+        },
+        "offline_oracle": {
+          "delivery_rate": 1.0,
+          "mean_success_latency_ms": 1086.1262083333334,
+          "n": 24,
+          "p95_success_latency_ms": 1141.204,
+          "sla": {
+            "1000": 0.0,
+            "1300": 0.9583333333333334,
+            "1600": 1.0,
+            "2000": 1.0,
+            "800": 0.0
+          }
+        },
+        "reliable_static": {
+          "delivery_rate": 1.0,
+          "mean_success_latency_ms": 1386.5588333333333,
+          "n": 24,
+          "p95_success_latency_ms": 1526.62,
+          "sla": {
+            "1000": 0.0,
+            "1300": 0.08333333333333333,
+            "1600": 0.9583333333333334,
+            "2000": 1.0,
+            "800": 0.0
+          }
+        },
+        "round_robin": {
+          "delivery_rate": 0.6666666666666666,
+          "mean_success_latency_ms": 1219.0525,
+          "n": 24,
+          "p95_success_latency_ms": 1411.107,
+          "sla": {
+            "1000": 0.0,
+            "1300": 0.375,
+            "1600": 0.6666666666666666,
+            "2000": 0.6666666666666666,
+            "800": 0.0
+          }
+        },
+        "verified_frontier": {
+          "delivery_rate": 1.0,
+          "mean_success_latency_ms": 1123.7940833333334,
+          "n": 24,
+          "p95_success_latency_ms": 1141.204,
+          "sla": {
+            "1000": 0.0,
+            "1300": 0.9583333333333334,
+            "1600": 0.9583333333333334,
+            "2000": 0.9583333333333334,
+            "800": 0.0
+          }
+        }
+      },
+      "reliable_provider": "zeroxrpc"
+    },
+    "ethereum:singleBlock": {
+      "frontiers": {
+        "flashbots": null,
+        "publicnode": null,
+        "zeroxrpc": 25654921
+      },
+      "latency_provider": "zeroxrpc",
+      "policies": {
+        "latency_static": {
+          "delivery_rate": 1.0,
+          "mean_success_latency_ms": 1393.4505416666668,
+          "n": 24,
+          "p95_success_latency_ms": 1467.305,
+          "sla": {
+            "1000": 0.0,
+            "1300": 0.041666666666666664,
+            "1600": 1.0,
+            "2000": 1.0,
+            "800": 0.0
+          }
+        },
+        "offline_oracle": {
+          "delivery_rate": 1.0,
+          "mean_success_latency_ms": 1393.4505416666668,
+          "n": 24,
+          "p95_success_latency_ms": 1467.305,
+          "sla": {
+            "1000": 0.0,
+            "1300": 0.041666666666666664,
+            "1600": 1.0,
+            "2000": 1.0,
+            "800": 0.0
+          }
+        },
+        "reliable_static": {
+          "delivery_rate": 1.0,
+          "mean_success_latency_ms": 1393.4505416666668,
+          "n": 24,
+          "p95_success_latency_ms": 1467.305,
+          "sla": {
+            "1000": 0.0,
+            "1300": 0.041666666666666664,
+            "1600": 1.0,
+            "2000": 1.0,
+            "800": 0.0
+          }
+        },
+        "round_robin": {
+          "delivery_rate": 0.3333333333333333,
+          "mean_success_latency_ms": 1356.38525,
+          "n": 24,
+          "p95_success_latency_ms": 1425.147,
+          "sla": {
+            "1000": 0.0,
+            "1300": 0.041666666666666664,
+            "1600": 0.3333333333333333,
+            "2000": 0.3333333333333333,
+            "800": 0.0
+          }
+        },
+        "verified_frontier": {
+          "delivery_rate": 1.0,
+          "mean_success_latency_ms": 1393.4505416666668,
+          "n": 24,
+          "p95_success_latency_ms": 1467.305,
+          "sla": {
+            "1000": 0.0,
+            "1300": 0.041666666666666664,
+            "1600": 1.0,
+            "2000": 1.0,
+            "800": 0.0
+          }
+        }
+      },
+      "reliable_provider": "zeroxrpc"
+    },
+    "optimism:blockHash": {
+      "frontiers": {
+        "1rpc": null,
+        "drpc": 154923416,
+        "official": 154880475
+      },
+      "latency_provider": "drpc",
+      "policies": {
+        "latency_static": {
+          "delivery_rate": 0.9583333333333334,
+          "mean_success_latency_ms": 913.3837391304348,
+          "n": 24,
+          "p95_success_latency_ms": 1000.728,
+          "sla": {
+            "1000": 0.875,
+            "1300": 0.9583333333333334,
+            "1600": 0.9583333333333334,
+            "2000": 0.9583333333333334,
+            "800": 0.125
+          }
+        },
+        "offline_oracle": {
+          "delivery_rate": 1.0,
+          "mean_success_latency_ms": 910.51175,
+          "n": 24,
+          "p95_success_latency_ms": 1056.162,
+          "sla": {
+            "1000": 0.875,
+            "1300": 1.0,
+            "1600": 1.0,
+            "2000": 1.0,
+            "800": 0.16666666666666666
+          }
+        },
+        "reliable_static": {
+          "delivery_rate": 1.0,
+          "mean_success_latency_ms": 1044.4874583333333,
+          "n": 24,
+          "p95_success_latency_ms": 1093.421,
+          "sla": {
+            "1000": 0.08333333333333333,
+            "1300": 1.0,
+            "1600": 1.0,
+            "2000": 1.0,
+            "800": 0.041666666666666664
+          }
+        },
+        "round_robin": {
+          "delivery_rate": 0.6666666666666666,
+          "mean_success_latency_ms": 974.7359375,
+          "n": 24,
+          "p95_success_latency_ms": 1072.781,
+          "sla": {
+            "1000": 0.3333333333333333,
+            "1300": 0.6666666666666666,
+            "1600": 0.6666666666666666,
+            "2000": 0.6666666666666666,
+            "800": 0.08333333333333333
+          }
+        },
+        "verified_frontier": {
+          "delivery_rate": 1.0,
+          "mean_success_latency_ms": 962.8100416666666,
+          "n": 24,
+          "p95_success_latency_ms": 1093.421,
+          "sla": {
+            "1000": 0.5833333333333334,
+            "1300": 1.0,
+            "1600": 1.0,
+            "2000": 1.0,
+            "800": 0.125
+          }
+        }
+      },
+      "reliable_provider": "official"
+    },
+    "optimism:singleBlock": {
+      "frontiers": {
+        "1rpc": null,
+        "drpc": 154914230,
+        "official": 154880475
+      },
+      "latency_provider": "drpc",
+      "policies": {
+        "latency_static": {
+          "delivery_rate": 0.9166666666666666,
+          "mean_success_latency_ms": 951.7389090909091,
+          "n": 24,
+          "p95_success_latency_ms": 997.686,
+          "sla": {
+            "1000": 0.875,
+            "1300": 0.9166666666666666,
+            "1600": 0.9166666666666666,
+            "2000": 0.9166666666666666,
+            "800": 0.0
+          }
+        },
+        "offline_oracle": {
+          "delivery_rate": 1.0,
+          "mean_success_latency_ms": 953.4315416666667,
+          "n": 24,
+          "p95_success_latency_ms": 1073.081,
+          "sla": {
+            "1000": 0.875,
+            "1300": 1.0,
+            "1600": 1.0,
+            "2000": 1.0,
+            "800": 0.041666666666666664
+          }
+        },
+        "reliable_static": {
+          "delivery_rate": 1.0,
+          "mean_success_latency_ms": 1058.0570416666667,
+          "n": 24,
+          "p95_success_latency_ms": 1112.731,
+          "sla": {
+            "1000": 0.041666666666666664,
+            "1300": 1.0,
+            "1600": 1.0,
+            "2000": 1.0,
+            "800": 0.041666666666666664
+          }
+        },
+        "round_robin": {
+          "delivery_rate": 0.625,
+          "mean_success_latency_ms": 1012.9308,
+          "n": 24,
+          "p95_success_latency_ms": 1080.662,
+          "sla": {
+            "1000": 0.2916666666666667,
+            "1300": 0.625,
+            "1600": 0.625,
+            "2000": 0.625,
+            "800": 0.0
+          }
+        },
+        "verified_frontier": {
+          "delivery_rate": 1.0,
+          "mean_success_latency_ms": 997.4791666666666,
+          "n": 24,
+          "p95_success_latency_ms": 1112.731,
+          "sla": {
+            "1000": 0.5833333333333334,
+            "1300": 1.0,
+            "1600": 1.0,
+            "2000": 1.0,
+            "800": 0.041666666666666664
+          }
+        }
+      },
+      "reliable_provider": "official"
+    }
+  },
+  "collapsed_epochs_excluded_from_headline": [
+    2,
+    3
+  ],
+  "epoch_health": [
+    {
+      "epoch": 0,
+      "eth_blockhash_rows": 72,
+      "eth_blockhash_semantic_ok": 49,
+      "healthy": true
+    },
+    {
+      "epoch": 1,
+      "eth_blockhash_rows": 72,
+      "eth_blockhash_semantic_ok": 49,
+      "healthy": true
+    },
+    {
+      "epoch": 2,
+      "eth_blockhash_rows": 72,
+      "eth_blockhash_semantic_ok": 0,
+      "healthy": false
+    },
+    {
+      "epoch": 3,
+      "eth_blockhash_rows": 72,
+      "eth_blockhash_semantic_ok": 0,
+      "healthy": false
+    }
+  ],
+  "epochs": [
+    0,
+    1
+  ],
+  "frontier_stability": [
+    {
+      "epoch": 0,
+      "flashbots_frontier": 25668774,
+      "samples": 1
+    },
+    {
+      "epoch": 1,
+      "flashbots_frontier": 25668774,
+      "samples": 1
+    },
+    {
+      "epoch": 2,
+      "flashbots_frontier": null,
+      "samples": 1
+    },
+    {
+      "epoch": 3,
+      "flashbots_frontier": null,
+      "samples": 24
+    }
+  ],
+  "latest_epoch": 1,
+  "pairs": {
+    "ethereum:blockHash": {
+      "frontiers": {
+        "flashbots": null,
+        "publicnode": 25654921,
+        "zeroxrpc": 25654921
+      },
+      "providers": [
+        "flashbots",
+        "publicnode",
+        "zeroxrpc"
+      ],
+      "samples": {
+        "flashbots": 24,
+        "publicnode": 24,
+        "zeroxrpc": 24
+      },
+      "semantic_ok": {
+        "flashbots": 1,
+        "publicnode": 24,
+        "zeroxrpc": 24
+      }
+    },
+    "ethereum:singleBlock": {
+      "frontiers": {
+        "flashbots": null,
+        "publicnode": null,
+        "zeroxrpc": 25654921
+      },
+      "providers": [
+        "flashbots",
+        "publicnode",
+        "zeroxrpc"
+      ],
+      "samples": {
+        "flashbots": 24,
+        "publicnode": 24,
+        "zeroxrpc": 24
+      },
+      "semantic_ok": {
+        "flashbots": 0,
+        "publicnode": 0,
+        "zeroxrpc": 24
+      }
+    },
+    "optimism:blockHash": {
+      "frontiers": {
+        "1rpc": null,
+        "drpc": 154923416,
+        "official": 154880475
+      },
+      "providers": [
+        "1rpc",
+        "drpc",
+        "official"
+      ],
+      "samples": {
+        "1rpc": 24,
+        "drpc": 24,
+        "official": 24
+      },
+      "semantic_ok": {
+        "1rpc": 0,
+        "drpc": 23,
+        "official": 24
+      }
+    },
+    "optimism:singleBlock": {
+      "frontiers": {
+        "1rpc": null,
+        "drpc": 154914230,
+        "official": 154880475
+      },
+      "providers": [
+        "1rpc",
+        "drpc",
+        "official"
+      ],
+      "samples": {
+        "1rpc": 24,
+        "drpc": 24,
+        "official": 24
+      },
+      "semantic_ok": {
+        "1rpc": 0,
+        "drpc": 22,
+        "official": 24
+      }
+    }
+  },
+  "provenance": "live_natural_observation"
+}

@@ -1,0 +1,32 @@
+{
+  "alchemy_cu": {
+    "call": 26,
+    "log": 60
+  },
+  "demotion_frac_n16_alchemy": 0.85,
+  "matrix_mean_cu_saving_pct": 23.806029040404038,
+  "matrix_scenarios": 660,
+  "model_mean_abs_error_pp": 9.145675505050509,
+  "model_sparse_abs_error_pp": 0.6440972222222303,
+  "provenance": "controlled_fault_injection",
+  "proxy_live": {
+    "byte_saving_pct": 51.36026974136046,
+    "bytes_bg": 696179,
+    "bytes_dual": 1431297,
+    "messages": 200,
+    "request_saving_pct": 50.0,
+    "requests_bg": 200,
+    "requests_dual": 400
+  },
+  "sparse_saving_gate_20pct": true,
+  "sparse_single_fault": {
+    "mean_byte_unit_saving_pct": 40.564236111111114,
+    "mean_byte_units_bg": 14.264583333333333,
+    "mean_byte_units_dual": 24.0,
+    "mean_cu_saving_pct": 35.12326388888889,
+    "mean_request_count_bg": 18.233333333333334,
+    "mean_request_count_dual": 24.0,
+    "mean_request_saving_pct": 21.458333333333332,
+    "n_rows": 120
+  }
+}

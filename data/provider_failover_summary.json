@@ -1,0 +1,239 @@
+{
+  "baselines": {
+    "always_dual": {
+      "delivered": 90,
+      "delivery_rate": 0.9375,
+      "operations": 96,
+      "queries": 192
+    },
+    "capability_aware_failover": {
+      "delivered": 94,
+      "delivery_rate": 0.9791666666666666,
+      "operations": 96,
+      "queries": 123
+    },
+    "fixed_first": {
+      "delivered": 50,
+      "delivery_rate": 0.5208333333333334,
+      "operations": 96,
+      "queries": 96
+    },
+    "hindsight_best_static": {
+      "delivered": 94,
+      "delivery_rate": 0.9791666666666666,
+      "operations": 96,
+      "queries": 96
+    }
+  },
+  "canary_queries": 0,
+  "fallback_queries": 27,
+  "final_states": {
+    "arbitrum:eth_getLogs:blockHash": {
+      "1rpc": {
+        "demotions": 0,
+        "status": "healthy"
+      },
+      "drpc": {
+        "demotions": 0,
+        "status": "healthy"
+      },
+      "publicnode": {
+        "demotions": 0,
+        "status": "healthy"
+      }
+    },
+    "arbitrum:eth_getLogs:singleBlock": {
+      "1rpc": {
+        "demotions": 0,
+        "status": "healthy"
+      },
+      "drpc": {
+        "demotions": 0,
+        "status": "healthy"
+      },
+      "publicnode": {
+        "demotions": 0,
+        "status": "healthy"
+      }
+    },
+    "arbitrum:eth_getTransactionReceipt": {
+      "1rpc": {
+        "demotions": 0,
+        "status": "healthy"
+      },
+      "drpc": {
+        "demotions": 0,
+        "status": "healthy"
+      },
+      "publicnode": {
+        "demotions": 0,
+        "status": "healthy"
+      }
+    },
+    "ethereum:eth_getLogs:blockHash": {
+      "1rpc": {
+        "demotions": 1,
+        "status": "quarantined"
+      },
+      "drpc": {
+        "demotions": 1,
+        "status": "quarantined"
+      },
+      "publicnode": {
+        "demotions": 0,
+        "status": "healthy"
+      }
+    },
+    "ethereum:eth_getLogs:singleBlock": {
+      "1rpc": {
+        "demotions": 1,
+        "status": "quarantined"
+      },
+      "drpc": {
+        "demotions": 0,
+        "status": "healthy"
+      },
+      "publicnode": {
+        "demotions": 0,
+        "status": "healthy"
+      }
+    },
+    "ethereum:eth_getTransactionReceipt": {
+      "1rpc": {
+        "demotions": 1,
+        "status": "quarantined"
+      },
+      "drpc": {
+        "demotions": 0,
+        "status": "healthy"
+      },
+      "publicnode": {
+        "demotions": 0,
+        "status": "healthy"
+      }
+    },
+    "optimism:eth_getLogs:blockHash": {
+      "1rpc": {
+        "demotions": 1,
+        "status": "quarantined"
+      },
+      "drpc": {
+        "demotions": 0,
+        "status": "healthy"
+      },
+      "nodies": {
+        "demotions": 0,
+        "status": "healthy"
+      },
+      "official": {
+        "demotions": 0,
+        "status": "healthy"
+      }
+    },
+    "optimism:eth_getLogs:singleBlock": {
+      "1rpc": {
+        "demotions": 1,
+        "status": "quarantined"
+      },
+      "drpc": {
+        "demotions": 0,
+        "status": "healthy"
+      },
+      "nodies": {
+        "demotions": 0,
+        "status": "healthy"
+      },
+      "official": {
+        "demotions": 0,
+        "status": "healthy"
+      }
+    },
+    "optimism:eth_getTransactionReceipt": {
+      "1rpc": {
+        "demotions": 1,
+        "status": "quarantined"
+      },
+      "drpc": {
+        "demotions": 0,
+        "status": "healthy"
+      },
+      "nodies": {
+        "demotions": 0,
+        "status": "healthy"
+      },
+      "official": {
+        "demotions": 0,
+        "status": "healthy"
+      }
+    },
+    "polygon:eth_getLogs:blockHash": {
+      "1rpc": {
+        "demotions": 0,
+        "status": "healthy"
+      },
+      "drpc": {
+        "demotions": 0,
+        "status": "healthy"
+      },
+      "quicknode": {
+        "demotions": 0,
+        "status": "healthy"
+      },
+      "tenderly": {
+        "demotions": 0,
+        "status": "healthy"
+      }
+    },
+    "polygon:eth_getLogs:singleBlock": {
+      "1rpc": {
+        "demotions": 1,
+        "status": "quarantined"
+      },
+      "drpc": {
+        "demotions": 0,
+        "status": "healthy"
+      },
+      "quicknode": {
+        "demotions": 0,
+        "status": "healthy"
+      },
+      "tenderly": {
+        "demotions": 0,
+        "status": "healthy"
+      }
+    },
+    "polygon:eth_getTransactionReceipt": {
+      "1rpc": {
+        "demotions": 0,
+        "status": "healthy"
+      },
+      "drpc": {
+        "demotions": 0,
+        "status": "healthy"
+      },
+      "quicknode": {
+        "demotions": 0,
+        "status": "healthy"
+      },
+      "tenderly": {
+        "demotions": 0,
+        "status": "healthy"
+      }
+    }
+  },
+  "operations": 96,
+  "policy": {
+    "explicit_error": "3-of-5 then 10-batch quarantine",
+    "recovery": "3 successful probation canaries",
+    "scope": "per-chain, per-method capability",
+    "semantic_mismatch": "immediate 20-batch quarantine"
+  },
+  "primary_failure_rate": 0.28125,
+  "primary_failures": 27,
+  "primary_queries": 96,
+  "records": 336,
+  "recovered": 25,
+  "recovery_rate": 0.9259259259259259,
+  "unavailable": 0,
+  "unrecovered": 2
+}

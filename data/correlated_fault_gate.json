@@ -1,0 +1,67 @@
+{
+  "cases": [
+    {
+      "accepted": false,
+      "behavior": "unavailable",
+      "detects_without_accepting": true,
+      "exception_raised": true,
+      "name": "boundary_outage",
+      "provenance": "controlled_fault_injection"
+    },
+    {
+      "accepted": false,
+      "behavior": "unavailable",
+      "name": "primary_repair_same_org_both_omit",
+      "note": "repair re-enters prefix gate; same-org omission cannot clear audit",
+      "post_repair_bad_chunks": [
+        0
+      ],
+      "provenance": "controlled_fault_injection"
+    },
+    {
+      "accepted_after_repair": true,
+      "correct": true,
+      "located": [
+        0
+      ],
+      "name": "independent_repair_recovers",
+      "provenance": "controlled_fault_injection"
+    },
+    {
+      "accepted": false,
+      "behavior": "unavailable",
+      "exception_raised": true,
+      "name": "mid_localization_boundary_unreadable",
+      "provenance": "controlled_fault_injection"
+    },
+    {
+      "behavior": "explicit_error_then_fallback",
+      "boundaryguard_required": false,
+      "fallback_recovers": true,
+      "name": "primary_explicit_rate_limit",
+      "primary_outcome": "explicit:http_error",
+      "provenance": "controlled_fault_injection",
+      "silent_omission": false
+    },
+    {
+      "accepted_after_repair": true,
+      "bad_chunk": 0,
+      "failure_class": "truncated_or_stale_nonempty",
+      "located": [
+        0
+      ],
+      "name": "truncated_nonempty_primary",
+      "provenance": "controlled_fault_injection"
+    },
+    {
+      "always_dual_detects": false,
+      "boundaryguard_recovers": true,
+      "name": "always_dual_both_silent_empty",
+      "provenance": "controlled_fault_injection"
+    }
+  ],
+  "executable_assertions_passed": true,
+  "fail_closed_cases": 3,
+  "provenance": "controlled_fault_injection",
+  "recoveries": 4
+}

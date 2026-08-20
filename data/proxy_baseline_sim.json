@@ -1,0 +1,72 @@
+{
+  "boundaryguard_completion": 1.0,
+  "cu_saving_vs_dual_pct": 4.285714285714286,
+  "faulty_batches": 4,
+  "messages_or_batches": 84,
+  "modes": [
+    {
+      "batches": 84,
+      "bytes": 187200,
+      "completion_rate": 0.9523809523809523,
+      "cu": 5040.0,
+      "latency_ms": {
+        "p50": 52.70965137982409,
+        "p95": 68.51027439641787,
+        "p99": 69.71850248519776
+      },
+      "mode": "unchecked",
+      "requests": 84,
+      "retries": 0,
+      "unavailable": 4
+    },
+    {
+      "batches": 84,
+      "bytes": 187200,
+      "completion_rate": 0.9523809523809523,
+      "cu": 5040.0,
+      "latency_ms": {
+        "p50": 54.637155526889025,
+        "p95": 68.66774696946065,
+        "p99": 69.68104307626803
+      },
+      "mode": "error_fallback",
+      "requests": 84,
+      "retries": 0,
+      "unavailable": 4
+    },
+    {
+      "batches": 84,
+      "bytes": 374400,
+      "completion_rate": 1.0,
+      "cu": 10080.0,
+      "latency_ms": {
+        "p50": 75.89473937826524,
+        "p95": 89.99497894174418,
+        "p99": 101.70317517656868
+      },
+      "mode": "always_dual",
+      "requests": 168,
+      "retries": 0,
+      "unavailable": 0
+    },
+    {
+      "batches": 84,
+      "bytes": 224000,
+      "completion_rate": 1.0,
+      "cu": 9648.0,
+      "latency_ms": {
+        "p50": 69.12806919694029,
+        "p95": 81.78460617934091,
+        "p99": 111.76188182852889
+      },
+      "mode": "boundaryguard",
+      "requests": 256,
+      "retries": 0,
+      "unavailable": 0
+    }
+  ],
+  "normal_path_p95_overhead_ms_vs_unchecked": 13.274331782923042,
+  "note": "offline relayer-workload simulation; not unmodified Hyperlane integration",
+  "provenance": "controlled_fault_injection",
+  "request_delta_vs_dual_pct": -52.38095238095238
+}

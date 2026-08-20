@@ -1,0 +1,1378 @@
+{
+  "chains": [
+    "arbitrum",
+    "ethereum",
+    "optimism",
+    "polygon"
+  ],
+  "groups": [
+    {
+      "chain": "arbitrum",
+      "explicit_or_transport_failure": 1,
+      "method": "eth_getLogs:blockHash",
+      "provider": "1rpc",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 7
+    },
+    {
+      "chain": "arbitrum",
+      "explicit_or_transport_failure": 1,
+      "method": "eth_getLogs:singleBlock",
+      "provider": "1rpc",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 7
+    },
+    {
+      "chain": "arbitrum",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getTransactionReceipt",
+      "provider": "1rpc",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 8
+    },
+    {
+      "chain": "arbitrum",
+      "explicit_or_transport_failure": 3,
+      "method": "eth_getLogs:blockHash",
+      "provider": "blockreq",
+      "queries": 3,
+      "silent_semantic_failure": 0,
+      "valid": 0
+    },
+    {
+      "chain": "arbitrum",
+      "explicit_or_transport_failure": 3,
+      "method": "eth_getLogs:singleBlock",
+      "provider": "blockreq",
+      "queries": 3,
+      "silent_semantic_failure": 0,
+      "valid": 0
+    },
+    {
+      "chain": "arbitrum",
+      "explicit_or_transport_failure": 2,
+      "method": "eth_getTransactionReceipt",
+      "provider": "blockreq",
+      "queries": 2,
+      "silent_semantic_failure": 0,
+      "valid": 0
+    },
+    {
+      "chain": "arbitrum",
+      "explicit_or_transport_failure": 5,
+      "method": "eth_getLogs:blockHash",
+      "provider": "drpc",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 3
+    },
+    {
+      "chain": "arbitrum",
+      "explicit_or_transport_failure": 5,
+      "method": "eth_getLogs:singleBlock",
+      "provider": "drpc",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 3
+    },
+    {
+      "chain": "arbitrum",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getTransactionReceipt",
+      "provider": "drpc",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 8
+    },
+    {
+      "chain": "arbitrum",
+      "explicit_or_transport_failure": 2,
+      "method": "eth_getLogs:blockHash",
+      "provider": "llamarpc",
+      "queries": 2,
+      "silent_semantic_failure": 0,
+      "valid": 0
+    },
+    {
+      "chain": "arbitrum",
+      "explicit_or_transport_failure": 2,
+      "method": "eth_getLogs:singleBlock",
+      "provider": "llamarpc",
+      "queries": 2,
+      "silent_semantic_failure": 0,
+      "valid": 0
+    },
+    {
+      "chain": "arbitrum",
+      "explicit_or_transport_failure": 2,
+      "method": "eth_getTransactionReceipt",
+      "provider": "llamarpc",
+      "queries": 2,
+      "silent_semantic_failure": 0,
+      "valid": 0
+    },
+    {
+      "chain": "arbitrum",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getLogs:blockHash",
+      "provider": "official",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 8
+    },
+    {
+      "chain": "arbitrum",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getLogs:singleBlock",
+      "provider": "official",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 8
+    },
+    {
+      "chain": "arbitrum",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getTransactionReceipt",
+      "provider": "official",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 8
+    },
+    {
+      "chain": "arbitrum",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getLogs:blockHash",
+      "provider": "publicnode",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 8
+    },
+    {
+      "chain": "arbitrum",
+      "explicit_or_transport_failure": 8,
+      "method": "eth_getLogs:singleBlock",
+      "provider": "publicnode",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 0
+    },
+    {
+      "chain": "arbitrum",
+      "explicit_or_transport_failure": 8,
+      "method": "eth_getTransactionReceipt",
+      "provider": "publicnode",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 0
+    },
+    {
+      "chain": "ethereum",
+      "explicit_or_transport_failure": 3,
+      "method": "eth_getLogs:blockHash",
+      "provider": "1rpc",
+      "queries": 8,
+      "silent_semantic_failure": 1,
+      "valid": 4
+    },
+    {
+      "chain": "ethereum",
+      "explicit_or_transport_failure": 7,
+      "method": "eth_getLogs:singleBlock",
+      "provider": "1rpc",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 1
+    },
+    {
+      "chain": "ethereum",
+      "explicit_or_transport_failure": 5,
+      "method": "eth_getTransactionReceipt",
+      "provider": "1rpc",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 3
+    },
+    {
+      "chain": "ethereum",
+      "explicit_or_transport_failure": 8,
+      "method": "eth_getLogs:blockHash",
+      "provider": "cloudflare",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 0
+    },
+    {
+      "chain": "ethereum",
+      "explicit_or_transport_failure": 8,
+      "method": "eth_getLogs:singleBlock",
+      "provider": "cloudflare",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 0
+    },
+    {
+      "chain": "ethereum",
+      "explicit_or_transport_failure": 8,
+      "method": "eth_getTransactionReceipt",
+      "provider": "cloudflare",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 0
+    },
+    {
+      "chain": "ethereum",
+      "explicit_or_transport_failure": 6,
+      "method": "eth_getLogs:blockHash",
+      "provider": "drpc",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 2
+    },
+    {
+      "chain": "ethereum",
+      "explicit_or_transport_failure": 1,
+      "method": "eth_getLogs:singleBlock",
+      "provider": "drpc",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 7
+    },
+    {
+      "chain": "ethereum",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getTransactionReceipt",
+      "provider": "drpc",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 8
+    },
+    {
+      "chain": "ethereum",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getLogs:blockHash",
+      "provider": "flashbots",
+      "queries": 40,
+      "silent_semantic_failure": 23,
+      "valid": 17
+    },
+    {
+      "chain": "ethereum",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getLogs:singleBlock",
+      "provider": "flashbots",
+      "queries": 40,
+      "silent_semantic_failure": 23,
+      "valid": 17
+    },
+    {
+      "chain": "ethereum",
+      "explicit_or_transport_failure": 4,
+      "method": "eth_getTransactionReceipt",
+      "provider": "flashbots",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 4
+    },
+    {
+      "chain": "ethereum",
+      "explicit_or_transport_failure": 8,
+      "method": "eth_getLogs:blockHash",
+      "provider": "llamarpc",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 0
+    },
+    {
+      "chain": "ethereum",
+      "explicit_or_transport_failure": 8,
+      "method": "eth_getLogs:singleBlock",
+      "provider": "llamarpc",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 0
+    },
+    {
+      "chain": "ethereum",
+      "explicit_or_transport_failure": 8,
+      "method": "eth_getTransactionReceipt",
+      "provider": "llamarpc",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 0
+    },
+    {
+      "chain": "ethereum",
+      "explicit_or_transport_failure": 8,
+      "method": "eth_getLogs:blockHash",
+      "provider": "merkle",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 0
+    },
+    {
+      "chain": "ethereum",
+      "explicit_or_transport_failure": 8,
+      "method": "eth_getLogs:singleBlock",
+      "provider": "merkle",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 0
+    },
+    {
+      "chain": "ethereum",
+      "explicit_or_transport_failure": 5,
+      "method": "eth_getTransactionReceipt",
+      "provider": "merkle",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 3
+    },
+    {
+      "chain": "ethereum",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getLogs:blockHash",
+      "provider": "publicnode",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 8
+    },
+    {
+      "chain": "ethereum",
+      "explicit_or_transport_failure": 8,
+      "method": "eth_getLogs:singleBlock",
+      "provider": "publicnode",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 0
+    },
+    {
+      "chain": "ethereum",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getTransactionReceipt",
+      "provider": "publicnode",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 8
+    },
+    {
+      "chain": "ethereum",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getLogs:blockHash",
+      "provider": "zeroxrpc",
+      "queries": 40,
+      "silent_semantic_failure": 0,
+      "valid": 40
+    },
+    {
+      "chain": "ethereum",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getLogs:singleBlock",
+      "provider": "zeroxrpc",
+      "queries": 40,
+      "silent_semantic_failure": 0,
+      "valid": 40
+    },
+    {
+      "chain": "ethereum",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getTransactionReceipt",
+      "provider": "zeroxrpc",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 8
+    },
+    {
+      "chain": "optimism",
+      "explicit_or_transport_failure": 1,
+      "method": "eth_getLogs:blockHash",
+      "provider": "1rpc",
+      "queries": 8,
+      "silent_semantic_failure": 7,
+      "valid": 0
+    },
+    {
+      "chain": "optimism",
+      "explicit_or_transport_failure": 2,
+      "method": "eth_getLogs:singleBlock",
+      "provider": "1rpc",
+      "queries": 8,
+      "silent_semantic_failure": 4,
+      "valid": 2
+    },
+    {
+      "chain": "optimism",
+      "explicit_or_transport_failure": 7,
+      "method": "eth_getTransactionReceipt",
+      "provider": "1rpc",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 1
+    },
+    {
+      "chain": "optimism",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getLogs:blockHash",
+      "provider": "drpc",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 8
+    },
+    {
+      "chain": "optimism",
+      "explicit_or_transport_failure": 1,
+      "method": "eth_getLogs:singleBlock",
+      "provider": "drpc",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 7
+    },
+    {
+      "chain": "optimism",
+      "explicit_or_transport_failure": 1,
+      "method": "eth_getTransactionReceipt",
+      "provider": "drpc",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 7
+    },
+    {
+      "chain": "optimism",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getLogs:blockHash",
+      "provider": "nodies",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 8
+    },
+    {
+      "chain": "optimism",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getLogs:singleBlock",
+      "provider": "nodies",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 8
+    },
+    {
+      "chain": "optimism",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getTransactionReceipt",
+      "provider": "nodies",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 8
+    },
+    {
+      "chain": "optimism",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getLogs:blockHash",
+      "provider": "official",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 8
+    },
+    {
+      "chain": "optimism",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getLogs:singleBlock",
+      "provider": "official",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 8
+    },
+    {
+      "chain": "optimism",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getTransactionReceipt",
+      "provider": "official",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 8
+    },
+    {
+      "chain": "optimism",
+      "explicit_or_transport_failure": 6,
+      "method": "eth_getLogs:blockHash",
+      "provider": "tatum",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 2
+    },
+    {
+      "chain": "optimism",
+      "explicit_or_transport_failure": 6,
+      "method": "eth_getLogs:singleBlock",
+      "provider": "tatum",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 2
+    },
+    {
+      "chain": "optimism",
+      "explicit_or_transport_failure": 7,
+      "method": "eth_getTransactionReceipt",
+      "provider": "tatum",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 1
+    },
+    {
+      "chain": "polygon",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getLogs:blockHash",
+      "provider": "1rpc",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 8
+    },
+    {
+      "chain": "polygon",
+      "explicit_or_transport_failure": 4,
+      "method": "eth_getLogs:singleBlock",
+      "provider": "1rpc",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 4
+    },
+    {
+      "chain": "polygon",
+      "explicit_or_transport_failure": 3,
+      "method": "eth_getTransactionReceipt",
+      "provider": "1rpc",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 5
+    },
+    {
+      "chain": "polygon",
+      "explicit_or_transport_failure": 3,
+      "method": "eth_getLogs:blockHash",
+      "provider": "blast",
+      "queries": 3,
+      "silent_semantic_failure": 0,
+      "valid": 0
+    },
+    {
+      "chain": "polygon",
+      "explicit_or_transport_failure": 2,
+      "method": "eth_getLogs:singleBlock",
+      "provider": "blast",
+      "queries": 2,
+      "silent_semantic_failure": 0,
+      "valid": 0
+    },
+    {
+      "chain": "polygon",
+      "explicit_or_transport_failure": 2,
+      "method": "eth_getTransactionReceipt",
+      "provider": "blast",
+      "queries": 2,
+      "silent_semantic_failure": 0,
+      "valid": 0
+    },
+    {
+      "chain": "polygon",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getLogs:blockHash",
+      "provider": "drpc",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 8
+    },
+    {
+      "chain": "polygon",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getLogs:singleBlock",
+      "provider": "drpc",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 8
+    },
+    {
+      "chain": "polygon",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getTransactionReceipt",
+      "provider": "drpc",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 8
+    },
+    {
+      "chain": "polygon",
+      "explicit_or_transport_failure": 3,
+      "method": "eth_getLogs:blockHash",
+      "provider": "llamarpc",
+      "queries": 3,
+      "silent_semantic_failure": 0,
+      "valid": 0
+    },
+    {
+      "chain": "polygon",
+      "explicit_or_transport_failure": 3,
+      "method": "eth_getLogs:singleBlock",
+      "provider": "llamarpc",
+      "queries": 3,
+      "silent_semantic_failure": 0,
+      "valid": 0
+    },
+    {
+      "chain": "polygon",
+      "explicit_or_transport_failure": 3,
+      "method": "eth_getTransactionReceipt",
+      "provider": "llamarpc",
+      "queries": 3,
+      "silent_semantic_failure": 0,
+      "valid": 0
+    },
+    {
+      "chain": "polygon",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getLogs:blockHash",
+      "provider": "quicknode",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 8
+    },
+    {
+      "chain": "polygon",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getLogs:singleBlock",
+      "provider": "quicknode",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 8
+    },
+    {
+      "chain": "polygon",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getTransactionReceipt",
+      "provider": "quicknode",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 8
+    },
+    {
+      "chain": "polygon",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getLogs:blockHash",
+      "provider": "tenderly",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 8
+    },
+    {
+      "chain": "polygon",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getLogs:singleBlock",
+      "provider": "tenderly",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 8
+    },
+    {
+      "chain": "polygon",
+      "explicit_or_transport_failure": 0,
+      "method": "eth_getTransactionReceipt",
+      "provider": "tenderly",
+      "queries": 8,
+      "silent_semantic_failure": 0,
+      "valid": 8
+    }
+  ],
+  "messages": 64,
+  "provenance": "live_natural_observation",
+  "providers": [
+    [
+      "arbitrum",
+      "1rpc"
+    ],
+    [
+      "arbitrum",
+      "blockreq"
+    ],
+    [
+      "arbitrum",
+      "drpc"
+    ],
+    [
+      "arbitrum",
+      "llamarpc"
+    ],
+    [
+      "arbitrum",
+      "official"
+    ],
+    [
+      "arbitrum",
+      "publicnode"
+    ],
+    [
+      "ethereum",
+      "1rpc"
+    ],
+    [
+      "ethereum",
+      "cloudflare"
+    ],
+    [
+      "ethereum",
+      "drpc"
+    ],
+    [
+      "ethereum",
+      "flashbots"
+    ],
+    [
+      "ethereum",
+      "llamarpc"
+    ],
+    [
+      "ethereum",
+      "merkle"
+    ],
+    [
+      "ethereum",
+      "publicnode"
+    ],
+    [
+      "ethereum",
+      "zeroxrpc"
+    ],
+    [
+      "optimism",
+      "1rpc"
+    ],
+    [
+      "optimism",
+      "drpc"
+    ],
+    [
+      "optimism",
+      "nodies"
+    ],
+    [
+      "optimism",
+      "official"
+    ],
+    [
+      "optimism",
+      "tatum"
+    ],
+    [
+      "polygon",
+      "1rpc"
+    ],
+    [
+      "polygon",
+      "blast"
+    ],
+    [
+      "polygon",
+      "drpc"
+    ],
+    [
+      "polygon",
+      "llamarpc"
+    ],
+    [
+      "polygon",
+      "quicknode"
+    ],
+    [
+      "polygon",
+      "tenderly"
+    ]
+  ],
+  "records": 662,
+  "silent_failure_providers": [
+    "1rpc",
+    "flashbots"
+  ],
+  "silent_failure_sources": [
+    {
+      "chain": "optimism",
+      "identity_valid": false,
+      "matching_logs": 0,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 1646474,
+      "outcome": "ok",
+      "provider": "1rpc",
+      "result_count": 0
+    },
+    {
+      "chain": "optimism",
+      "identity_valid": false,
+      "matching_logs": 0,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 1646807,
+      "outcome": "ok",
+      "provider": "1rpc",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": false,
+      "matching_logs": 0,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 250052,
+      "outcome": "ok",
+      "provider": "1rpc",
+      "result_count": 0
+    },
+    {
+      "chain": "optimism",
+      "identity_valid": false,
+      "matching_logs": 0,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 1646252,
+      "outcome": "ok",
+      "provider": "1rpc",
+      "result_count": 0
+    },
+    {
+      "chain": "optimism",
+      "identity_valid": false,
+      "matching_logs": 0,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 1646363,
+      "outcome": "ok",
+      "provider": "1rpc",
+      "result_count": 0
+    },
+    {
+      "chain": "optimism",
+      "identity_valid": false,
+      "matching_logs": 0,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 1646363,
+      "outcome": "ok",
+      "provider": "1rpc",
+      "result_count": 0
+    },
+    {
+      "chain": "optimism",
+      "identity_valid": false,
+      "matching_logs": 0,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 1646585,
+      "outcome": "ok",
+      "provider": "1rpc",
+      "result_count": 0
+    },
+    {
+      "chain": "optimism",
+      "identity_valid": false,
+      "matching_logs": 0,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 1646585,
+      "outcome": "ok",
+      "provider": "1rpc",
+      "result_count": 0
+    },
+    {
+      "chain": "optimism",
+      "identity_valid": false,
+      "matching_logs": 0,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 1646696,
+      "outcome": "ok",
+      "provider": "1rpc",
+      "result_count": 0
+    },
+    {
+      "chain": "optimism",
+      "identity_valid": false,
+      "matching_logs": 0,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 1646918,
+      "outcome": "ok",
+      "provider": "1rpc",
+      "result_count": 0
+    },
+    {
+      "chain": "optimism",
+      "identity_valid": false,
+      "matching_logs": 0,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 1647029,
+      "outcome": "ok",
+      "provider": "1rpc",
+      "result_count": 0
+    },
+    {
+      "chain": "optimism",
+      "identity_valid": false,
+      "matching_logs": 0,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 1647029,
+      "outcome": "ok",
+      "provider": "1rpc",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": false,
+      "matching_logs": 0,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 249941,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": false,
+      "matching_logs": 0,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 249941,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": false,
+      "matching_logs": 0,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 250052,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": false,
+      "matching_logs": 0,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 250052,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": false,
+      "matching_logs": 0,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 250163,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": false,
+      "matching_logs": 0,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 250163,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": false,
+      "matching_logs": 0,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 250274,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": false,
+      "matching_logs": 0,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 250274,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 249830,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 249830,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 249862,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 249862,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 249894,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 249894,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 249927,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 249927,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 249959,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 249959,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 249991,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 249991,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 250023,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 250023,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 250056,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 250056,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 250088,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 250088,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 250120,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 250120,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 250152,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 250152,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 250184,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 250184,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 250217,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 250217,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 250249,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 250249,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 250281,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 250281,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 250313,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 250313,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 250346,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 250346,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 250378,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 250378,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:blockHash",
+      "nonce": 250410,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    },
+    {
+      "chain": "ethereum",
+      "identity_valid": null,
+      "matching_logs": null,
+      "method": "eth_getLogs:singleBlock",
+      "nonce": 250410,
+      "outcome": "ok",
+      "provider": "flashbots",
+      "result_count": 0
+    }
+  ],
+  "silent_semantic_failures": 58,
+  "unique_query_contexts": 662
+}

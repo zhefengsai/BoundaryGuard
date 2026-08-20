@@ -1,0 +1,128 @@
+{
+  "address": "0x1103eAC1729C744C3c9a4A5e4Fbeb9c39b050648",
+  "checklist_table": [
+    {
+      "item": "Docker agent image on cloud",
+      "status": "PASS"
+    },
+    {
+      "item": "Optimism Mailbox.nonce readable",
+      "status": "PASS"
+    },
+    {
+      "item": "Signer key format / address derive",
+      "note": "0x1103\u20260648",
+      "status": "PASS"
+    },
+    {
+      "item": "OP balance >= 0.001",
+      "note": "0 ETH",
+      "status": "FAIL"
+    },
+    {
+      "item": "ETH archive RPC for IGP sync",
+      "note": "publicnode broken; ankr unauthorized",
+      "status": "FAIL"
+    },
+    {
+      "item": "Prior run destination signer wired",
+      "note": "No signer found x2",
+      "status": "FAIL"
+    },
+    {
+      "item": "Prior run any process/deliver evidence",
+      "note": "0 / 0",
+      "status": "FAIL"
+    },
+    {
+      "item": "IGP/self-dispatch plan",
+      "note": "missing; funded run likely 0 deliveries",
+      "status": "FAIL"
+    },
+    {
+      "item": "Spend guards (gas limit/max tx)",
+      "status": "FAIL"
+    },
+    {
+      "item": "Destination tx evidence in summary",
+      "status": "FAIL"
+    }
+  ],
+  "checks": [
+    {
+      "detail": "0.000000 ETH; precheck_ge_0.001=False",
+      "id": "op_bal",
+      "ok": true,
+      "severity": "warn",
+      "title": "OP balance"
+    },
+    {
+      "detail": "HTTP Error 403: Forbidden",
+      "id": "eth_bal",
+      "ok": false,
+      "severity": "warn",
+      "title": "ETH balance"
+    },
+    {
+      "detail": "0x0000000000000000000000000000000000000000000000000000000000192314",
+      "id": "op_mailbox",
+      "ok": true,
+      "severity": "blocker",
+      "title": "Mailbox.nonce"
+    },
+    {
+      "detail": "HTTP Error 403: Forbidden",
+      "id": "eth_hist_publicnode",
+      "ok": false,
+      "severity": "blocker",
+      "title": "ETH hist publicnode"
+    },
+    {
+      "detail": "{'code': -32000, 'message': 'Unauthorized: You must authenticate your request with an API key. Creat",
+      "id": "eth_hist_ankr",
+      "ok": false,
+      "severity": "warn",
+      "title": "ETH hist ankr"
+    },
+    {
+      "detail": "Own relayer unlikely to deliver default-IGP-paid messages without self-dispatch",
+      "id": "igp",
+      "ok": false,
+      "severity": "warn",
+      "title": "IGP model"
+    },
+    {
+      "detail": "No gas limit / max tx / balance cap in harness",
+      "id": "guards",
+      "ok": false,
+      "severity": "warn",
+      "title": "Spend guards"
+    },
+    {
+      "detail": "Summary counts proxy accepts, not destination tx hashes",
+      "id": "evidence",
+      "ok": false,
+      "severity": "warn",
+      "title": "Delivery evidence"
+    }
+  ],
+  "cloud": {
+    "archive_token_hits": 3944,
+    "delivered_hits": 0,
+    "error_lines": 5470,
+    "eth_publicnode_hist": "403/archive-token class failure",
+    "image": true,
+    "no_signer_hits": 2,
+    "op_mailbox": "ok",
+    "process_hits": 0
+  },
+  "observed_at": "2026-08-04T22:03:56.557348+00:00",
+  "recommendation": "DO_NOT_FUND_YET",
+  "zero_cost_next": [
+    "Replace Ethereum RPC with archive-capable endpoint before any funded run",
+    "Add transaction_gas_limit + max submitted txs + pre/post balance diff",
+    "Optional: 30s signed cloud run ONLY after spend guards AND with OP balance still 0 (txs should not succeed) to verify signer errors clear \u2014 still prefer testnet",
+    "Design self-dispatch (testnet preferred) for guaranteed process evidence",
+    "Do not bridge/fund OP until archive RPC + IGP/self-dispatch path are ready"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "address": "0x2e70781E2d3AD0fC6C79741064047F75b6B666fe",
+  "claim": "DIY destination Mailbox.process by our funded signer",
+  "delivery_check": {
+    "delivered": true,
+    "message_id": "0x803f6ec5248f09a6eb95c1cc64f5d128b266143e894df55ef41dc0d2f0c0d854"
+  },
+  "dest_chain": "sepolia",
+  "dispatch": {
+    "explorer": "https://sepolia-optimism.etherscan.io/tx/0xa9d4fe7ca459371acebb6dbc23547dce5680f79f84f0bb79c445370595692c66",
+    "message_id": "0x803f6ec5248f09a6eb95c1cc64f5d128b266143e894df55ef41dc0d2f0c0d854",
+    "recipient": "0x1Af932B73352e0cBF8e63b44a39Fb6d14F90D090",
+    "tx": "0xa9d4fe7ca459371acebb6dbc23547dce5680f79f84f0bb79c445370595692c66",
+    "unpaid": true
+  },
+  "ism": {
+    "address": "0x94e04D906b32f3E4373e2De29334528d0afC0A56",
+    "moduleType": 6,
+    "note": "NULL ISM so DIY process does not require Hyperlane validator metadata",
+    "type": "AlwaysIsm"
+  },
+  "network": "testnet",
+  "observed_at": "2026-08-05T00:21:58.534017+00:00",
+  "process": {
+    "explorer": "https://sepolia.etherscan.io/tx/0xac422eae7acaa51a2a750b16bc3065840f0fca5ada5ffeca7c73ca4444908cdd",
+    "from": "0x2e70781E2d3AD0fC6C79741064047F75b6B666fe",
+    "mailbox": "0xfFAEF09B3cd11D9b20d1a19bECca54EEC2884766",
+    "to": "0xfFAEF09B3cd11D9b20d1a19bECca54EEC2884766",
+    "tx": "0xac422eae7acaa51a2a750b16bc3065840f0fca5ada5ffeca7c73ca4444908cdd"
+  },
+  "provenance": "live_natural_observation",
+  "proxy_fixes": [
+    "passthrough unfiltered Mailbox eth_getLogs",
+    "audit blockHash+Dispatch as single-block range"
+  ],
+  "recipient_last_data_utf8": "BoundaryGuard\u0003",
+  "source_chain": "optimismsepolia"
+}
