@@ -446,8 +446,8 @@
       "sha256": "ff573862cf1c786a86a85bc4dbd15d18b2618869e15d38cbcac4b76d80e554cb"
     }
   ],
-  "frozen_at": "2026-08-20T12:59:52.177299+00:00",
-  "git_revision": "7d408caae9eb60c3ce5985b746562b25f5686827",
+  "frozen_at": "2026-09-18T09:07:41.004374+00:00",
+  "git_revision": "54847cea7a1512d3fba2ca8a4c8d7823f8e8b7c1",
   "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
   "protocol": {
     "boundary": "Mailbox.nonce()",

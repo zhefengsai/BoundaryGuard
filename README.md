@@ -17,17 +17,16 @@ BoundaryGuard is a JSON-RPC proxy that preserves the `eth_getLogs` schema. It au
 
 ## Experimental conditions
 
-The paper asks five questions.
+The paper asks four questions.
 
-1. RQ1 (Reality). Do successful RPC responses exhibit semantic incompleteness?
-2. RQ2 (Correlated retrieval). Can replica agreement fail to expose the same omission?
-3. RQ3 (Correctness and recovery). Does BoundaryGuard accept complete evidence without false alarms, and does it detect, localize, repair, or safely withhold incomplete evidence?
+1. RQ1 (Occurrence). Do successful RPC responses exhibit semantic incompleteness?
+2. RQ2 (Replica agreement). Can replica agreement fail to expose the same omission?
+3. RQ3 (Correctness and recovery). Does BoundaryGuard accept complete evidence without false alarms and recover from incomplete evidence, including when an unmodified official relayer is placed behind the proxy?
 4. RQ4 (Cost and performance). What cost, latency, and throughput trade-off does protocol-state auditing impose relative to unchecked, fallback, and always-dual retrieval?
-5. RQ5 (Integration and applicability). Does the design work with an unmodified relayer, and under what conditions can the same abstraction be used beyond Hyperlane?
 
 The proxy sits in front of unmodified `eth_getLogs` clients, including Hyperlane `agents-v2.2.0`. Measurements use Ethereum, Optimism, Polygon, and Arbitrum. Closed-loop delivery is Optimism Sepolia to Ethereum Sepolia. The test ISM is a 1-of-1 MessageIdMultisigISM under our validator. That configuration checks integration. It is not a claim about decentralized production security.
 
-Each printed claim has one provenance label (table below). A saved failure that is later replayed is not counted as a new live observation. Gate 1 is the four-chain live audit. The Gate 2 figures in the paper come from `data/natural_fault_gate2_submit_freeze.json`: 4,416 responses on UTC 2026-08-03, 2026-08-04, 2026-08-05, 2026-08-06, and 2026-08-18. The collector file `data/natural_fault_gate2_summary.json` also includes 2026-08-19 (4,896 records) and is not the printed corpus. The 58/662 rate is an occurrence count on a targeted schedule, not an estimate of how often silent omissions occur on the public Internet.
+Each printed claim has one provenance label (table below). A saved failure that is later replayed is not counted as a new live observation. Gate 1 is the four-chain live audit. The Gate 2 figures in the paper come from `data/natural_fault_gate2_submit_freeze.json`: 4,416 responses on UTC 2026-08-03, 2026-08-04, 2026-08-05, 2026-08-06, and 2026-08-18. The collector file `data/natural_fault_gate2_summary.json` also includes 2026-08-19 (4,896 records). That UTC day is a freeze cutoff on the submission calendar date, not a quality filter, and is not the printed corpus. The 58/662 rate is an occurrence count on a targeted schedule, not an estimate of how often silent omissions occur on the public Internet.
 
 The harness compares four policies. Unchecked retrieval uses a single provider. Explicit-error fallback retries only on reported errors. Always-dual retrieval takes the larger of two log sets and is used as a cost baseline. A 2-of-3 quorum is replayed from saved Gate 2 replies; that replay is not an official Hyperlane quorum-mode agent run. The official-agent experiment measures integration, not throughput. Cost is reported in Alchemy reference compute units (60 for `eth_getLogs`, 26 for `eth_call`). Those values are a published reference, not a universal tariff. The evaluation also reports false-alarm rate, exact-chunk localization, availability, proxy latency, and throughput.
 
@@ -37,9 +36,9 @@ RQ2. Independently operated providers can return matching successful-empty bodie
 
 RQ3. Of 1,281 live Gate 1 batches, 1,141 were auditable and none raised a false alarm. 140 batches withheld under a single-boundary ablation later recovered 140/140 on the multi-URL archive path. All 28 saved silent omissions in `data/natural_e2e_expanded.jsonl` repair under live boundary and repair RPCs. Ten single-block empty windows recover 10/10. Controlled identity mutations cover the integrity faults in the paper's scope. A four-chain `Mailbox.nonce()` cross-check at 100 heights per chain agrees in 400 of 400 readable pairs.
 
-RQ4. A seeded fault-density matrix of 660 controlled scenarios localizes every case. Cold healthy-path baselines use five disjoint Optimism slices of 198 messages each, with a post-hoc oracle on 691 unique blocks (at least two provider organizations). Relative to always-dual, the archive proxy saves 20.1% reference CU on that cold path; P50/P95 rise from 0.17/0.25 s to 0.55/0.87 s. Concurrent runs use n = 64 queries at concurrency 1 and 8. At concurrency 8 the archive proxy uses 7,116 CU against 7,680 for always-dual (7.3% lower), at 9.26 qps versus 19.4 qps and P95 1.92 s versus 0.47 s. Sliding-window cache amortization and a controlled demotion state machine (omit, quarantine, probation, healthy) are reported separately. On ten preserved successful-empty contexts, unchecked retrieval misses all ten; always-dual and BoundaryGuard recover all ten.
+RQ4. A seeded fault-density matrix of 660 controlled scenarios localizes every case. Mean absolute model error versus the analytic cost model is 9.1 percentage points over the 22 populated cells and 0.64 points on the four single-fault cells with n>=8 (`python3 exp/verify_cost_model_error.py`). Cold healthy-path baselines use five disjoint Optimism slices of 198 messages each, with a post-hoc oracle on 691 unique blocks (at least two provider organizations). Relative to always-dual, the archive proxy saves 20.1% reference CU on that cold path; P50/P95 rise from 0.17/0.25 s to 0.55/0.87 s. Concurrent runs use n = 64 queries at concurrency 1 and 8. At concurrency 8 the archive proxy uses 7,116 CU against 7,680 for always-dual (7.3% lower), at 9.26 qps versus 19.4 qps and P95 1.92 s versus 0.47 s. Sliding-window cache amortization and a controlled demotion state machine (omit, quarantine, probation, healthy) are reported separately. On ten preserved successful-empty contexts, unchecked retrieval misses all ten; always-dual and BoundaryGuard recover all ten.
 
-RQ5. An unmodified official Hyperlane agent delivered 50 valid trials out of 59 attempts. Nine attempts were excluded because source Dispatch failed before the proxy path ran. Ten further trials in which both primary and repair returned empty failed closed; those ten are not among the 59. On 12 live Ethereum Wormhole Core windows, `nextSequence(emitter)` matches `LogMessagePublished` 12/12, and a controlled single-event drop is detected 12/12. That experiment tests the monotone-state mapping. It is not a Wormhole relayer integration.
+The official-agent integration is reported under RQ3. An unmodified official Hyperlane agent delivered 50 valid trials out of 59 attempts. Nine attempts were excluded because source Dispatch failed before the proxy path ran. Ten further trials in which both primary and repair returned empty failed closed; those ten are not among the 59. On 12 live Ethereum Wormhole Core windows, `nextSequence(emitter)` matches `LogMessagePublished` 12/12, and a controlled single-event drop is detected 12/12. That experiment tests the monotone-state mapping. It is not a Wormhole relayer integration.
 
 Re-running live RPC jobs produces new timestamps and, in general, different counts. The printed numbers are those in the frozen files named above.
 
@@ -83,8 +82,11 @@ Point an unmodified `eth_getLogs` client, for example a Hyperlane agent source R
 python3 exp/verify_manifest.py
 # expect: OK
 
+python3 exp/verify_cost_model_error.py
+# expect: 22 measured cells, MAE 9.15 pp overall, 0.64 pp on four single-fault n>=8 cells; 2940 is the analytic grid
+
 python3 -c "import json; print(json.load(open('data/natural_fault_gate2_submit_freeze.json')))"
-# expect: records=4416, five calendar days, exclude 2026-08-19
+# expect: records=4416, five calendar days, exclude 2026-08-19 (freeze cutoff on that UTC date; collector dump retains the day)
 ```
 
 ## Reproducing the experiments
@@ -115,7 +117,7 @@ python3 exp/natural_fault_multiday.py
 python3 exp/third_org_hunt_bounded.py
 ```
 
-### RQ2. Correlated retrieval
+### RQ2. Replica agreement
 
 The printed 2-of-3 comparison is an offline replay:
 
@@ -163,7 +165,9 @@ python3 exp/contiguous_scan_amortization.py
 
 `s4_paired_baselines.py --skip-live` runs only the controlled matrix and exits non-zero by design. Frozen concurrent rows: `data/strong_e2e/concurrent_throughput.json`.
 
-### RQ5. Relayer integration and portability
+### Relayer integration and mapping feasibility
+
+Official-agent delivery is part of RQ3. Wormhole is a mapping check, not a fifth research question.
 
 Testnet runs need your own RPC and signer. Official-agent paths need Docker and Hyperlane `agents-v2.2.0`. The published test ISM is 1-of-1.
 
