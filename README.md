@@ -4,7 +4,7 @@ This directory is the public code and data release for the paper of the same tit
 
 Cross-chain relayers fetch source-chain events from remotely operated RPC services. An HTTP or JSON-RPC success code means the transport succeeded. It does not mean the body contains every protocol event implied by committed contract state. The paper calls that stronger requirement semantic completeness. In targeted live probes of Hyperlane `Mailbox.Dispatch` retrieval, 58 of 662 queries returned a successful but incomplete body. Independently operated provider organizations also returned matching successful-empty replies for the same nonce.
 
-BoundaryGuard is a JSON-RPC proxy that preserves the `eth_getLogs` schema. It audits each reply against an independently obtained monotone boundary, `Mailbox.nonce()`. When the exact prefix does not match, it isolates the inconsistent chunks, repairs only those chunks from a second provider, and returns unavailable if completeness cannot be established.
+BoundaryGuard is a JSON-RPC proxy that preserves the `eth_getLogs` schema. It audits each reply against an independently obtained monotone boundary, `Mailbox.nonce()`. When the exact prefix does not match, it isolates the inconsistent chunks, repairs only those chunks from a second provider, and returns unavailable if completeness cannot be established. In the paper's deployment model the proxy sits at an edge or cloud gateway that hosts the relayer. It does not run on constrained IoT devices and does not protect the device-to-gateway link.
 
 ## Directory layout
 
@@ -34,11 +34,11 @@ RQ1. Targeted probes cover 25 chain/provider pairs and 64 real messages, using b
 
 RQ2. Independently operated providers can return matching successful-empty bodies for the same nonce (`data/natural_correlated_dual.json`). Agreement among replicas is therefore not a completeness proof. A 2-of-3 replay over 448 Gate 2 groups is stored in `data/quorum_trace_baseline.json`. In controlled dual-silent cases, always-dual remains silent while BoundaryGuard detects the gap and repairs it.
 
-RQ3. Of 1,281 live Gate 1 batches, 1,141 were auditable and none raised a false alarm. 140 batches withheld under a single-boundary ablation later recovered 140/140 on the multi-URL archive path. All 28 saved silent omissions in `data/natural_e2e_expanded.jsonl` repair under live boundary and repair RPCs. Ten single-block empty windows recover 10/10. Controlled identity mutations cover the integrity faults in the paper's scope. A four-chain `Mailbox.nonce()` cross-check at 100 heights per chain agrees in 400 of 400 readable pairs.
+RQ3. Of 1,281 live Gate 1 batches, 1,141 were auditable and none raised a false alarm. 140 batches withheld under a single-boundary ablation later recovered 140/140 on the multi-URL archive path. All 28 saved silent omissions in `data/natural_e2e_expanded.jsonl` repair under live boundary and repair RPCs. Ten single-block empty windows recover 10/10. Controlled identity mutations cover the integrity faults in the paper's scope. A four-chain `Mailbox.nonce()` cross-check at 100 heights per chain agrees in 400 of 400 readable pairs. An unmodified official Hyperlane agent delivered 50 valid trials out of 59 attempts. Nine attempts were excluded because source Dispatch failed before the proxy path ran. Ten further trials in which both primary and repair returned empty failed closed; those ten are not among the 59.
 
 RQ4. A seeded fault-density matrix of 660 controlled scenarios localizes every case. Mean absolute model error versus the analytic cost model is 9.1 percentage points over the 22 populated cells and 0.64 points on the four single-fault cells with n>=8 (`python3 exp/verify_cost_model_error.py`). Cold healthy-path baselines use five disjoint Optimism slices of 198 messages each, with a post-hoc oracle on 691 unique blocks (at least two provider organizations). Relative to always-dual, the archive proxy saves 20.1% reference CU on that cold path; P50/P95 rise from 0.17/0.25 s to 0.55/0.87 s. Concurrent runs use n = 64 queries at concurrency 1 and 8. At concurrency 8 the archive proxy uses 7,116 CU against 7,680 for always-dual (7.3% lower), at 9.26 qps versus 19.4 qps and P95 1.92 s versus 0.47 s. Sliding-window cache amortization and a controlled demotion state machine (omit, quarantine, probation, healthy) are reported separately. On ten preserved successful-empty contexts, unchecked retrieval misses all ten; always-dual and BoundaryGuard recover all ten.
 
-The official-agent integration is reported under RQ3. An unmodified official Hyperlane agent delivered 50 valid trials out of 59 attempts. Nine attempts were excluded because source Dispatch failed before the proxy path ran. Ten further trials in which both primary and repair returned empty failed closed; those ten are not among the 59. On 12 live Ethereum Wormhole Core windows, `nextSequence(emitter)` matches `LogMessagePublished` 12/12, and a controlled single-event drop is detected 12/12. That experiment tests the monotone-state mapping. It is not a Wormhole relayer integration.
+On 12 live Ethereum Wormhole Core windows, `nextSequence(emitter)` matches `LogMessagePublished` 12/12, and a controlled single-event drop is detected 12/12. That check supports the monotone-state mapping used in Discussion. It is not a Wormhole relayer integration and is not a fifth research question.
 
 Re-running live RPC jobs produces new timestamps and, in general, different counts. The printed numbers are those in the frozen files named above.
 
@@ -128,7 +128,7 @@ python3 exp/dual_correlated_cost_gates.py
 
 Natural correlated-empty pairs: `data/natural_correlated_dual.json`. Controlled always-dual silent miss versus BoundaryGuard detection: `data/correlated_fault_gate.json` and `data/dual_silent_empty_gate.json`.
 
-### RQ3. Correctness and recovery
+### RQ3. Correctness, recovery, and official-agent integration
 
 ```bash
 python3 exp/strong_accept_suite.py
@@ -145,6 +145,17 @@ python3 exp/boundary_nonce_crosscheck_4chain.py --per-chain 100
 ```
 
 Repair-path records: `data/natural_e2e_expanded.jsonl` (28 saved silent omissions). Gate 1 four-chain summary: `data/boundaryguard_scale_four_chain_summary.json`.
+
+Official-agent delivery is part of RQ3. Testnet runs need your own RPC and signer. Official-agent paths need Docker and Hyperlane `agents-v2.2.0`. The published test ISM is 1-of-1.
+
+```bash
+python3 exp/s1_go_nogo.py
+python3 exp/s2_strong_e2e.py
+python3 exp/s3_strong_e2e.py
+python3 exp/bin/gate3_testnet_run.sh
+```
+
+Excluded official-agent attempts: `data/strong_e2e/excluded_attempts_classification.json`.
 
 ### RQ4. Cost and performance
 
@@ -165,28 +176,15 @@ python3 exp/contiguous_scan_amortization.py
 
 `s4_paired_baselines.py --skip-live` runs only the controlled matrix and exits non-zero by design. Frozen concurrent rows: `data/strong_e2e/concurrent_throughput.json`.
 
-### Relayer integration and mapping feasibility
+### Mapping feasibility (not a fifth RQ)
 
-Official-agent delivery is part of RQ3. Wormhole is a mapping check, not a fifth research question.
-
-Testnet runs need your own RPC and signer. Official-agent paths need Docker and Hyperlane `agents-v2.2.0`. The published test ISM is 1-of-1.
-
-```bash
-python3 exp/s1_go_nogo.py
-python3 exp/s2_strong_e2e.py
-python3 exp/s3_strong_e2e.py
-python3 exp/bin/gate3_testnet_run.sh
-```
-
-Excluded official-agent attempts: `data/strong_e2e/excluded_attempts_classification.json`.
-
-Wormhole portability (live Ethereum public RPC). Frozen result: `data/wormhole_live_boundary.json`.
+Wormhole is a monotone-state mapping check, not a relayer integration. Frozen result: `data/wormhole_live_boundary.json`.
 
 ```bash
 python3 exp/wormhole_min_check.py --windows 12
 ```
 
-The script checks that `nextSequence(emitter)` deltas match `LogMessagePublished` counts and that a controlled drop is detected. It does not run a Wormhole relayer.
+The script checks that `nextSequence(emitter)` deltas match `LogMessagePublished` counts and that a controlled drop is detected.
 
 ## Refreshing the SHA-256 manifest
 
