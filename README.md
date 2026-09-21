@@ -12,8 +12,7 @@ BoundaryGuard is a JSON-RPC proxy that preserves the `eth_getLogs` schema. It au
 |------|----------|
 | [`BoundaryGuard/`](BoundaryGuard/) | Proxy (`boundaryguard_proxy.py`), identity checks (`hyperlane_identity.py`), `rpc_probe.py`, unit tests, and an example config. |
 | [`data/`](data/) | Frozen traces and summaries, including `experiment_manifest.json` (SHA-256 inventory). |
-| [`exp/`](exp/) | Experiment drivers: natural-fault collection, paired baselines, throughput, testnet integration, freeze, and verify. |
-| [`exp/bin/`](exp/bin/) | Optional shell helpers for testnet runs. They do not contain funded keys. |
+| [`exp/`](exp/) | Experiment drivers for the paper's RQ1–RQ4 measurements, plus freeze and verify. |
 
 ## Experimental conditions
 
@@ -114,8 +113,9 @@ Live collection appends or overwrites traces. New rows are not the printed freez
 ```bash
 python3 exp/natural_fault_expansion.py
 python3 exp/natural_fault_multiday.py
-python3 exp/third_org_hunt_bounded.py
 ```
+
+A bounded third-organization hunt is frozen in `data/natural_fault_third_hunt_bounded_summary.json`. It did not find a third provider organization with successful-empty behavior.
 
 ### RQ2. Replica agreement
 
@@ -152,7 +152,6 @@ Official-agent delivery is part of RQ3. Testnet runs need your own RPC and signe
 python3 exp/s1_go_nogo.py
 python3 exp/s2_strong_e2e.py
 python3 exp/s3_strong_e2e.py
-python3 exp/bin/gate3_testnet_run.sh
 ```
 
 Excluded official-agent attempts: `data/strong_e2e/excluded_attempts_classification.json`.
@@ -197,4 +196,4 @@ python3 exp/verify_manifest.py
 
 ## Scope
 
-This tree does not include private keys, `.env` files, funded testnet signers, operator RPC credentials, or the manuscript source. Raw Wormhole transaction dumps (tens of megabytes) are omitted; the printed portability result is `data/wormhole_live_boundary.json`. The release does not estimate the prevalence of silent omissions on the public Internet. The files in this repository are licensed under CC BY 4.0 (see `LICENSE`).
+This tree does not include private keys, `.env` files, funded testnet signers, operator RPC credentials, or the manuscript source. Raw Wormhole transaction dumps (tens of megabytes) are omitted; the printed portability result is `data/wormhole_live_boundary.json`. The release does not estimate the prevalence of silent omissions on the public Internet. Intermediate collection dumps, superseded Gate-1 600-batch traces, proxy request logs, and unused frontier/failover probes are omitted; the printed numbers are in the frozen summaries named above. The files in this repository are licensed under CC BY 4.0 (see `LICENSE`).
